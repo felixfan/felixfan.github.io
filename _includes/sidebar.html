@@ -1,0 +1,28 @@
+<h3>Felix Yanhui Fan, Ph.D <img src="https://dl.dropboxusercontent.com/u/8272421/felix.jpg" alt="Smiley face" height="84" width="84"/></h3>
+<p>I am working in the field of human complex disease research, with specialization in bioinformatics and statistical genetics.</p>
+
+<p>
+	<a href="http://www.linkedin.com/pub/felix-yanhui-fan/22/176/a9a">
+		<img src="https://dl.dropboxusercontent.com/u/8272421/linkedin.jpg" alt="Smiley face" height="42" width="42"/>
+	</a> 
+	<a href="https://www.researchgate.net/profile/Yan-Hui_Fan/">
+		<img src="https://dl.dropboxusercontent.com/u/8272421/rg.jpg" alt="Smiley face" height="42" width="42"/>
+	</a>
+	<a href="https://github.com/felixfan">
+		<img src="https://dl.dropboxusercontent.com/u/8272421/GitHub.png" alt="Smiley face" height="42" width="42"/>
+	</a>
+	<a href="https://www.facebook.com/felixfyh">
+		<img src="https://dl.dropboxusercontent.com/u/8272421/facebook.png" alt="Smiley face" height="42" width="42"/>
+	</a>
+	<a href="http://weibo.com/fanyanhui">
+		<img src="https://dl.dropboxusercontent.com/u/8272421/weibo.gif" alt="Smiley face" height="42" width="42"/>
+	</a>
+</p>
+
+<h3>Recent Posts</h3>
+
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
