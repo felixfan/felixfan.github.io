@@ -13,6 +13,9 @@ paginate: 10
 # markdown: rdiscount 
 # redcarpet2 isn't available on the Github version of the jekyll engine
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
 permalink: pretty
 pygments: true
 
