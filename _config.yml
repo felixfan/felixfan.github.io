@@ -5,6 +5,7 @@ url: "http://localhost:4000"
 
 paginate: 10
 
-markdown: rdiscount
+# markdown: rdiscount
+markdown: redcarpet
 permalink: pretty
 pygments: true
