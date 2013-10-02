@@ -1,11 +1,22 @@
 name: "Bioinformatics and Statistical Genetics!"
 description: "Felix Yanhui Fan's personal website"
 
-url: "http://localhost:4000"
+author :
+  name : Felix Yanhui Fan
+  email : nolanfyh@gmail.com
+  github : felixfan
+  
+url: "http://felixfan.github.io"
 
 paginate: 10
 
-# markdown: rdiscount
+# markdown: rdiscount 
+# redcarpet2 isn't available on the Github version of the jekyll engine
 markdown: redcarpet
 permalink: pretty
 pygments: true
+
+analytics :
+  provider : google
+  google :
+    tracking_id : 'UA-44240871-1'
