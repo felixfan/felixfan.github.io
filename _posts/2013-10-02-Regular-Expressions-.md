@@ -1,5 +1,5 @@
 ---
-title: R: Regular Expressions
+title: R Regular Expressions
 layout: post
 ---
 
