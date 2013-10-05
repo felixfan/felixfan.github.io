@@ -120,38 +120,3 @@ install.packages(package_list)  #Re-install all installed packages
 [R 3.0.0 is released! (what’s new, and how to upgrade)](http://www.r-statistics.com/2013/04/r-3-0-0-is-released-whats-new-and-how-to-upgrade/)   
 [Automated Re-Install of Packages for R 3.0](http://randyzwitch.com/automated-re-install-of-packages-for-r-3-0/)     
 
-<a href="http://felixfan.github.io{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
-
-<!-- This is the actual comments section -->
-<div id="disqus_thread"></div>
-		<script type="text/javascript">
-			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			var disqus_shortname = 'felixfan'; // required: replace example with your forum shortname
-                        var disqus_identifier = '{{ page.url }}';
-		        var disqus_url = 'http://felixfan.github.io{{ page.url }}';
- 
-			/* * * DON'T EDIT BELOW THIS LINE * * */
-			(function() {
-				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			})();
-		</script>
-		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-<!-- Put this just before the closing body tag of your web page -->
-<script type="text/javascript">
-		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		var disqus_shortname = 'felixfan'; // required: replace example with your forum shortname
-                var disqus_identifier = '{{ page.url }}';
-		var disqus_url = 'http://felixfan.github.io{{ page.url }}';
- 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function () {
-			var s = document.createElement('script'); s.async = true;
-			s.type = 'text/javascript';
-			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
-	</script>		
