@@ -10,9 +10,11 @@ layout: post
 * [Bioconductor - Home](http://www.bioconductor.org/)
 * [Quick-R](http://www.statmethods.net/)
 * [inside-R | A Community Site for R | A Community Site for R – Sponsored by Revolution Analytics](http://www.inside-r.org/)
+* [Statistics for HCI Research](http://yatani.jp/HCIstats/HomePage)
 * [Stack Overflow](http://stackoverflow.com/)
 * [Simply Statistics](http://simplystatistics.org/)
 * [Code School - Try R](http://tryr.codeschool.com/)
+* [Handbook of Biological Statistics](http://udel.edu/~mcdonald/statintro.html)
 * [RDataMining.com: R and Data Mining](http://www.rdatamining.com/)
 * [An R Introduction to Statistics | R Tutorial](http://www.r-tutor.com/)
 * [Learning R | Finding my way around R](http://learnr.wordpress.com/)
@@ -47,5 +49,6 @@ layout: post
 * [quantmod: Quantitative Financial Modelling Framework](http://www.quantmod.com/)
 * [Computerworld's Beginners Guide to R](http://blog.revolutionanalytics.com/2013/06/computerworld-guide-to-r.html)
 * [LaTeX/Mathematics - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [Advanced R programming](http://adv-r.had.co.nz/)
 
 
