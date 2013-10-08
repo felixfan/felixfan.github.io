@@ -3,6 +3,7 @@ title: R Tutorials, Resources and Blogs
 layout: post
 ---
 
+* [R tips pages](https://www.zoology.ubc.ca/~schluter/R/)
 * [R-bloggers | R news & tutorials from the web](http://www.r-bloggers.com/)
 * [swirl: a platform for learning statistics and R simultaneously and interactively](http://ncarchedi.github.io/swirl/)
 * [Cookbook for R](http://www.cookbook-r.com/)
