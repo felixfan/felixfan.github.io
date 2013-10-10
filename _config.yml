@@ -8,7 +8,7 @@ author :
   
 url: "http://localhost:4000"
 
-paginate: 10
+paginate: 5
 
 # markdown: rdiscount 
 # redcarpet2 isn't available on the Github version of the jekyll engine
