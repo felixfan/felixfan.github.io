@@ -3,6 +3,13 @@ title: Softwares
 layout: default
 ---
 
+#### **FunPlots**: R Plot for Fun
+
+Plot Heart and Thong using R. 
+   
+FunPlots is available at [GitHub](http://felixfan.github.io/FunPlots/)   
+  
+***
 
 #### **PubMedWordcloud**: PubMed Word Clouds
 
