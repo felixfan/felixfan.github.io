@@ -15,7 +15,7 @@ layout: default
 
 ### Regular Expressions
 
-[R Regular Expressions](http://felixfan.github.io/2013/10/02/Regular-Expressions/)
+* [R Regular Expressions](http://felixfan.github.io/2013/10/02/Regular-Expressions/)
 
 ### R Tutorials
 
