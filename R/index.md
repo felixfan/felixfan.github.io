@@ -9,6 +9,10 @@ layout: default
 
 * [Install and Update R and R packages](http://felixfan.github.io/2013/10/04/install-update-R/)
 
+### Data type
+
+* [R Data type](http://felixfan.github.io/2013/10/16/R-Data-type/)
+
 ### Files and Directories
 
 * [R Manipulation of Files and Directories](http://felixfan.github.io/2013/10/08/File-Manipulation/)
