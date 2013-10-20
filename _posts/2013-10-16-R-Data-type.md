@@ -1,6 +1,8 @@
 ---
 title: R Data type
 layout: post
+categories: [RStudy]
+tags: [r, data type, vector, list, matrix, data frame, factor]
 ---
 
 ### vectors and assignment

@@ -1,6 +1,8 @@
 ---
 title: R Manipulation of Files and Directories
 layout: post
+categories: [RStudy]
+tags: [r, file, directory]
 ---
 
 ### Creat directories

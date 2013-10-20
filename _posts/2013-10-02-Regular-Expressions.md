@@ -1,6 +1,8 @@
 ---
 title: R Regular Expressions
 layout: post
+categories: [RStudy]
+tags: [r, regular expressions,regex]
 ---
 
 created on 1 Oct 2013    

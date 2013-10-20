@@ -1,6 +1,8 @@
 ---
 title: Install and Update R and R packages
 layout: post
+categories: [RStudy]
+tags: [r, install package, update package]
 ---
 
 ```

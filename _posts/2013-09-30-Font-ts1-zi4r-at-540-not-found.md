@@ -1,6 +1,8 @@
 ---
 title: Font ts1-zi4r at 540 not found
 layout: post
+categories: [RStudy]
+tags: [r package, ts1-zi4r, MiKTeX, LATEX]
 ---
 
 When I use {devtools} to builds and checks a source package, I got the Error: Font ts1-zi4r at 540 not found.

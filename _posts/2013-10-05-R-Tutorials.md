@@ -1,6 +1,8 @@
 ---
 title: R Tutorials, Resources and Blogs
 layout: post
+categories: [RStudy]
+tags: [r, blog, tutorial,resource]
 ---
 
 * [R tips pages](https://www.zoology.ubc.ca/~schluter/R/)

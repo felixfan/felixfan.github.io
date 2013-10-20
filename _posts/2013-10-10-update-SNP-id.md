@@ -1,6 +1,8 @@
 ---
 title: Updating kgp IDs to rs IDs for SNPs on Illumina HumanOmni2.5M array
 layout: post
+categories: [Bioinformatics]
+tags: [SNP, id, kgp, rs, ngs, gwas, illumina]
 ---
 
 ### Step 1: Create a file of genomic coordinates from your map file
