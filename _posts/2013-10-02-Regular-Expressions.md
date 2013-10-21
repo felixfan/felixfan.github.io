@@ -3,6 +3,7 @@ title: R Regular Expressions
 layout: post
 categories: [RStudy]
 tags: [r, regular expressions,regex]
+image: /figure
 ---
 
 created on 1 Oct 2013    

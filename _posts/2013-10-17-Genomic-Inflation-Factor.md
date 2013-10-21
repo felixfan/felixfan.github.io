@@ -2,7 +2,8 @@
 title: Genomic inflation factor and population structure
 layout: post
 categories: [Bioinformatics]
-tags: [Genomic inflation factor, population structure]
+tags: [genomic inflation factor, population structure, bioinformatics]
+image: /figure
 ---
 
 The genomic inflation factor $$\lambda$$ is defined as the ratio of the median of the empirically observed distribution of the test statistic to the expected median, thus quantifying the extent of the bulk inflation and the excess false positive rate.    

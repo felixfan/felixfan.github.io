@@ -24,3 +24,7 @@ layout: default
 ### R Tutorials
 
 * [R Tutorials, Resources and Blogs](http://felixfan.github.io/2013/10/05/R-Tutorials/)
+
+### R Plot
+
+* [Pedigree plot using {kinship2}](http://felixfan.github.io/rstudy/2013/10/20/kinship/)

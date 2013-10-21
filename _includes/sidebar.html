@@ -32,9 +32,15 @@
 </p>
 
 <h3>Recent Posts</h3>
-
 <ul>
   {% for post in site.posts limit: 10 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+</ul>
+
+<h3>Tags</h3>
+<ul>
+    {% for tag in site.tags %}		
+        <li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li>
+    {% endfor %}
 </ul>

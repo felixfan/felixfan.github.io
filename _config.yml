@@ -26,3 +26,7 @@ analytics :
   provider : google
   google :
     tracking_id : 'UA-44240871-1'
+
+tags:
+- jekyll
+- code
