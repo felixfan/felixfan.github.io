@@ -2,7 +2,7 @@
 title: R Data type
 layout: post
 categories: [RStudy]
-tags: [r, data]
+tags: [R]
 image: /figure
 ---
 

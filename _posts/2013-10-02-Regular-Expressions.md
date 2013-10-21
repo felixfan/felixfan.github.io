@@ -2,7 +2,7 @@
 title: R Regular Expressions
 layout: post
 categories: [RStudy]
-tags: [r, regular expressions,regex]
+tags: [R, Regular Expressions,RegEx]
 image: /figure
 ---
 

@@ -2,7 +2,7 @@
 title: Association VS. Causal relationships
 layout: post
 categories: [RStudy]
-tags: [bioinformatics, association, causal]
+tags: [Bioinformatics, Genetics, GWAS]
 image: /figure
 ---
 ### Association

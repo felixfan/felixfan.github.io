@@ -2,7 +2,7 @@
 title: PubMedWordcloud
 layout: post
 categories: [Bioinformatics]
-tags: [wordcloud, pubmed, r]
+tags: [wordcloud, PubMed, R, Plot]
 image: /figure
 ---
 
