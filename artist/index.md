@@ -1,6 +1,6 @@
 ---
 title: ArtistD
-layout: post
+layout: page
 ---
 
 ![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/008.jpg)
@@ -20,12 +20,10 @@ layout: post
 ![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/001.jpg)
 
 
-
-
-
 <audio controls autoplay>
       <source type="audio/mp3" src="https://dl.dropboxusercontent.com/u/8272421/a_little_love.mp3">
       <source type="audio/ogg" src="https://dl.dropboxusercontent.com/u/8272421/a_little_love.ogg">
       <embed src="https://dl.dropboxusercontent.com/u/8272421/a_little_love.mp3" type="audio/mp3" width="300" 
       height="100"/>
 </audio>
+
