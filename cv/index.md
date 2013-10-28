@@ -42,4 +42,9 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 2. **Fan Y-H**, Shi Q, Chen J, Wang W, Pang H, Tang J, Tao S. 2008. The rates and patterns of insertions, deletions and substitutions in mouse and rat inferred from introns. Chinese Science Bulletin 53(18):2813-2819. [Abstract](http://link.springer.com/article/10.1007/s11434-008-0352-z)
 1. **Fan Y-H**, Wang W, Ma G, Liang L, Shi Q, Tao S. 2007. Patterns of Insertion and Deletion in Mammalian Genomes. Current Genomics 8:370-378. [PMID: 19412437](http://www.ncbi.nlm.nih.gov/pubmed/19412437)
 
+### Conference Proceedings
+
+1. **Y.H. Fan**, K. M. C. Cheung, D. Chan, W.Y. Cheung, K. S. E. Cheah, P. Sham, K. D. K. Luk, and Y.Q. Song. 2012. GENOME-WIDE ASSOCIATION STUDY OF ADOLESCENT IDIOPATHIC SCOLIOSIS IN SOUTHERN CHINA. J Bone Joint Surg Br 2012 94-B:(SUPP XXVII) 39. [Abstract](http://www.bjjprocs.boneandjoint.org.uk/content/94-B/SUPP_XXVII/39.abstract)
+
+
 
