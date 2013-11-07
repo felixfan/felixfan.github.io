@@ -41,5 +41,5 @@ Here the test is not "is my SNP independent of the covariate", but instead "if I
 ### Further Reading
 [Biostar](http://www.biostars.org/p/14914/)    
 [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/anal.shtml)    
-
-
+[Informed conditioning on clinical covariates increases power in case-control association studies. PLoS Genet. 2012;8(11):e1003032](http://www.ncbi.nlm.nih.gov/pubmed/23144628)       
+[The Covariate's Dilemma. PLoS Genet. 2012 November; 8(11): e1003096.](http://www.ncbi.nlm.nih.gov/pubmed/23162385)      
