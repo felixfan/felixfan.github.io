@@ -145,7 +145,7 @@ geneticCodeDemo1 <- function() {
 geneticCodeDemo1()
 ```
 
-![plot of chunk genetic-code-demo1](figure/genetic-code-demo1.png) 
+![plot of chunk genetic-code-demo1](/figure/genetic-code-demo1.png) 
 
 
 ### Demo 2
@@ -185,7 +185,7 @@ geneticCodeDemo2 <- function() {
 geneticCodeDemo2()
 ```
 
-![plot of chunk genetic-code-demo2](figure/genetic-code-demo2.png) 
+![plot of chunk genetic-code-demo2](/figure/genetic-code-demo2.png) 
 
 
 ### Demo 3
@@ -227,7 +227,7 @@ geneticCodeDemo3 <- function() {
 geneticCodeDemo3()
 ```
 
-![plot of chunk genetic-code-demo3](figure/genetic-code-demo3.png) 
+![plot of chunk genetic-code-demo3](/figure/genetic-code-demo3.png) 
 
 
 ### Demo 4
@@ -270,5 +270,5 @@ geneticCodeDemo4 <- function() {
 geneticCodeDemo4()
 ```
 
-![plot of chunk genetic-code-demo4](figure/genetic-code-demo4.png) 
+![plot of chunk genetic-code-demo4](/figure/genetic-code-demo4.png) 
 
