@@ -2,7 +2,7 @@
 title: R Tutorials, Resources and Blogs
 layout: post
 categories: [RStudy]
-tags: [R]
+tags: [R,Webpages]
 image: /figure
 ---
 
