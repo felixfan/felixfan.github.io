@@ -55,5 +55,6 @@ image: /figure
 * [LaTeX/Mathematics - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [Advanced R programming](http://adv-r.had.co.nz/)
 * [a Little Book of R for Bioinformatics](http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/)
-
+* [Rcpp](http://www.rcpp.org/)
+* [Rcpp Gallery](http://gallery.rcpp.org/)
 
