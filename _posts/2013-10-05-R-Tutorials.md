@@ -57,4 +57,6 @@ image: /figure
 * [a Little Book of R for Bioinformatics](http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/)
 * [Rcpp](http://www.rcpp.org/)
 * [Rcpp Gallery](http://gallery.rcpp.org/)
-
+* [R-Fiddle: An online playground for R code](http://www.r-fiddle.org/)
+* [Davis R Users' Group](http://www.noamross.net/davis-r-users-group.html)
+* [ggplot2 documentation](http://docs.ggplot2.org/current/)
