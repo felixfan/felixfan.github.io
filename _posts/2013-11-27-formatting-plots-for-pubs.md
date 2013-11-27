@@ -2,7 +2,7 @@
 title: Formatting plots for publications (ggplot2)
 layout: post
 categories: [RStudy]
-tags: [R,Plot,ggplot2]
+tags: [R,Plot,ggplot2,plyr]
 image: /figure
 ---
 
