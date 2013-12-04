@@ -1,8 +1,8 @@
 ---
 title: Trigonometric functions and Differentiation Formulas
 layout: post
-categories: [RStudy]
-tags: [R,Plot,ggplot2]
+categories: [Finance]
+tags: [Mathematics,Finance]
 image: /figure
 ---
 

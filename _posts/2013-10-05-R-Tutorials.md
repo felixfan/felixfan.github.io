@@ -60,3 +60,5 @@ image: /figure
 * [R-Fiddle: An online playground for R code](http://www.r-fiddle.org/)
 * [Davis R Users' Group](http://www.noamross.net/davis-r-users-group.html)
 * [ggplot2 documentation](http://docs.ggplot2.org/current/)
+* [is.R()](http://is-r.tumblr.com/)
+
