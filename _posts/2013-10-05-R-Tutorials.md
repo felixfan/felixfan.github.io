@@ -61,4 +61,4 @@ image: /figure
 * [Davis R Users' Group](http://www.noamross.net/davis-r-users-group.html)
 * [ggplot2 documentation](http://docs.ggplot2.org/current/)
 * [is.R()](http://is-r.tumblr.com/)
-
+* [60+ R resources to improve your data skills](http://www.computerworld.com/s/article/9239799/60_R_resources_to_improve_your_data_skills)

@@ -2,7 +2,7 @@
 title: RMA normalization for microarray data
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics, Genetics, Microarray]
+tags: [Bioinformatics, Genetics, Microarray,GEO]
 image: /figure
 ---
 
