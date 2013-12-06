@@ -62,3 +62,7 @@ image: /figure
 * [ggplot2 documentation](http://docs.ggplot2.org/current/)
 * [is.R()](http://is-r.tumblr.com/)
 * [60+ R resources to improve your data skills](http://www.computerworld.com/s/article/9239799/60_R_resources_to_improve_your_data_skills)
+* [plotly | Analyze and visualize data, together](https://plot.ly/)
+* [R Bootcamp](http://jaredknowles.com/r-bootcamp/)
+
+

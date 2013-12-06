@@ -49,7 +49,7 @@ FinCal is a R Package for time value of money calculation, time series analysis 
 * Technical analysis
 * Cost of goods sold and ending inventory under three methods (FIFO,LIFO,Weighted average)
 
-More details and examples of using PubMedWordcloud is available [here](http://felixfan.github.io/FinCal/)
+More details and examples of using FinCal is available [here](http://felixfan.github.io/FinCal/)
 
 FinCal is available at [CRAN](http://cran.r-project.org/web/packages/FinCal/index.html) and [GitHub](https://github.com/felixfan/FinCal)
 
