@@ -28,7 +28,7 @@ If you do not want to creat a new account, just click **"No thanks, just start m
 
 ### Load data from csv file
 
-The example data used is a typical PLINK association output contains 12 columns (CHR, SNP, BP, A1, F_A, F_U, A2, CHISQ, P, OR, SE, L95, U95).    
+The example data used is a typical PLINK association output contains 13 columns (CHR, SNP, BP, A1, F_A, F_U, A2, CHISQ, P, OR, SE, L95, U95).    
 
 First create tables.   
 
@@ -134,8 +134,7 @@ SELECT * FROM gwas a INNER JOIN replicate b ON a.P<0.00001 AND b.P<0.005;
 ### Further reading
 
 * [A Visual Explanation of SQL Joins](http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html)
-
-
+* [Using Database Joins to Compare Results Sets](http://gettinggeneticsdone.blogspot.hk/2013/11/using-database-joins-to-compare-results.html)
 
 
 
