@@ -5,8 +5,8 @@ layout: default
 
 I am a research assistant in The University of Hong Kong.    
 
-I am working in the field of human complex disease research.    
-
+I am working in the field of human complex disease research, with specialization in bioinformatics and statistical genetics.
+  
 [CV](http://felixfan.github.io/cv/)    
 
 **contact**     

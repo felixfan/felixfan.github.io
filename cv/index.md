@@ -20,6 +20,25 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 * Teaching Assistant, Northwest A&F University, Jun 2007 - Jul 2007
 * Student Counselor, Northwest A&F University, Aug 2006 – Jul 2007
 
+### Professional Membership
+* Programmer
+* CFA level 1
+* FRM part 1
+
+### Languages
+* Chinese (Mandarin): native
+* English: fluent
+* Cantonese: basic
+
+### Computer Skills
+* Programming: Perl, R, Java, C++, Python, MySQL, VB, C, Shell scripts
+* OS: Windows, Linux, MAC OS
+* MS Office: Word, Excel, Power Point
+
+### Open Source Software/package I developed
+* Perl: [IPGWAS](http://sourceforge.net/projects/ipgwas/)
+* R: [FinCal](http://cran.r-project.org/web/packages/FinCal/index.html); [PubMedWordclound](http://cran.r-project.org/web/packages/PubMedWordcloud/index.html); [RGenetics](http://cran.r-project.org/web/packages/RGenetics/index.html); [powerAnalysis](http://cran.r-project.org/web/packages/powerAnalysis/index.html)
+
 ### Honors and Awards
 
 * Bursaries for Wellcome Trust Advanced Courses and workshops (Working with the Human Genome Sequence, Oxford University Clinical Research Unit, Ho Chi Minh City, Vietnam, 3-6 Dec 2012), Dec 2012
