@@ -68,3 +68,24 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 
 1. **Y.H. Fan**, K. M. C. Cheung, D. Chan, W.Y. Cheung, K. S. E. Cheah, P. Sham, K. D. K. Luk, and Y.Q. Song. 2012. GENOME-WIDE ASSOCIATION STUDY OF ADOLESCENT IDIOPATHIC SCOLIOSIS IN SOUTHERN CHINA. J Bone Joint Surg Br 2012 94-B:(SUPP XXVII) 39. [Abstract](http://www.bjjprocs.boneandjoint.org.uk/content/94-B/SUPP_XXVII/39.abstract)
 2. Lu Hua Chen, Patrick Yu Ping Kao, **Yan Hui Fan**, Deborah Tip Yin Ho, Sze Yan Chan, Ping Yiu Yip, Joyce Cheuk Tung Ha, Leung Wing Chu, You Qiang Song. 2011. Polymorphisms of CR1, CLU and PICALM Confer Susceptibility of Alzheimer’s Disease in Southern Chinese Population. Alzheimer's & Dementia 7:(Supplement)S181. [Abstract](http://download.journals.elsevierhealth.com/pdfs/journals/1552-5260/PIIS1552526011006376.pdf)
+
+### Open Courses with Certification
+
+* Introduction to Finance 
+* Principles of Economics for Scientists
+* Financial Engineering and Risk Management
+* Fundamentals of Personal Financial Planning
+* Computational Investing, Part I
+* New Models of Business in Society
+* Math for Economists
+* Computing for Data Analysis
+* Data Analysis
+* Statistics: Making Sense of Data
+* Introduction to Statistics
+* Game Theory
+* Case-Based Introduction to Biostatistics
+* Mathematical Biostatistics Boot Camp 1
+* Introduce to Computer Science I
+* Data Management for Clinical Research
+* Single Variable Calculus I
+
