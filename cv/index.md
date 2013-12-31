@@ -71,21 +71,28 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 
 ### Open Courses with Certification
 
-* Introduction to Finance 
-* Principles of Economics for Scientists
-* Financial Engineering and Risk Management
-* Fundamentals of Personal Financial Planning
-* Computational Investing, Part I
-* New Models of Business in Society
-* Math for Economists
-* Computing for Data Analysis
-* Data Analysis
-* Statistics: Making Sense of Data
-* Introduction to Statistics
-* Game Theory
-* Case-Based Introduction to Biostatistics
-* Mathematical Biostatistics Boot Camp 1
-* Introduce to Computer Science I
-* Data Management for Clinical Research
-* Single Variable Calculus I
+**coursera (16)**
 
+* [Introduction to Finance](https://www.coursera.org/course/introfinance)
+* [Principles of Economics for Scientists](https://www.coursera.org/course/econ1scientists)
+* [Mathematical Methods for Quantitative Finance](https://www.coursera.org/course/mathematicalmethods)
+* [Financial Engineering and Risk Management](https://www.coursera.org/course/fe)
+* [Fundamentals of Personal Financial Planning](https://www.coursera.org/course/financialplanning)
+* [Computational Investing, Part I](https://www.coursera.org/course/compinvesting1)
+* [New Models of Business in Society](https://www.coursera.org/course/bizsociety)
+* [The Role of the Renminbi in the International Monetary System](https://www.coursera.org/course/renminbi)
+* [Computing for Data Analysis](https://www.coursera.org/course/compdata)
+* [Data Analysis](https://www.coursera.org/course/dataanalysis)
+* [Statistics: Making Sense of Data](https://www.coursera.org/course/introstats)
+* [Game Theory](https://www.coursera.org/course/gametheory)
+* [Case-Based Introduction to Biostatistics](https://www.coursera.org/course/casebasedbiostat)
+* [Mathematical Biostatistics Boot Camp 1](https://www.coursera.org/course/biostats)
+* [Statistics One](https://www.coursera.org/course/stats1)
+* [Data Management for Clinical Research](https://www.coursera.org/course/datamanagement)
+
+**saylor (4)**
+
+* [Single Variable Calculus I](http://www.saylor.org/courses/ma101/)
+* [Math for Economists](http://www.saylor.org/courses/econ200/)
+* [Introduce to Computer Science I](http://www.saylor.org/courses/cs101/)
+* [Introduction to Statistics](http://www.saylor.org/courses/ma121/)
