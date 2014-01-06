@@ -34,4 +34,6 @@ venn.diagram(input, filename = filename, fill = c("cornflowerblue", "green",
     cex = 0.8)
 ```
 
-![Venn_4set_pretty](/figure/Venn_4set_pretty.png)
+The output is a TIFF format figure.    
+
+![](/figure/Venn_4set_pretty.jpg)
