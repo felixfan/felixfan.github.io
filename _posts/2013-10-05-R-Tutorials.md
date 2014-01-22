@@ -15,6 +15,8 @@ image: /figure
 * [R-bloggers | R news & tutorials from the web](http://www.r-bloggers.com/)
 * [Simply Statistics](http://simplystatistics.org/)
 * [is.R()](http://is-r.tumblr.com/)
+* [G-FORGE: A BLOG ABOUT ORTHOPAEDIC SURGERY, R, RESEARCH AND MORE](http://gforge.se/)
+* [The Analysis Factor Making Statistics Make Sense](http://www.theanalysisfactor.com/)
 
 #### Finance
 
@@ -97,6 +99,10 @@ image: /figure
 
 * [Advanced statistical computing](http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html)
 * [Advanced R programming](http://adv-r.had.co.nz/)
+
+#### Books
+
+* [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/index.html)
 
 #### Others
 

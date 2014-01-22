@@ -3,21 +3,23 @@ title: ArtistD
 layout: page
 ---
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/008.jpg)
+![](/artistFigures/strawberry.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/007.jpg)
+![](/artistFigures/008.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/006.jpg)
+![](/artistFigures/007.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/005.jpg)
+![](/artistFigures/006.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/004.jpg)
+![](/artistFigures/005.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/003.jpg)
+![](/artistFigures/004.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/002.jpg)
+![](/artistFigures/003.jpg)
 
-![](https://dl.dropboxusercontent.com/u/8272421/ArtistD/001.jpg)
+![](/artistFigures/002.jpg)
+
+![](/artistFigures/001.jpg)
 
 
 <audio controls autoplay>
