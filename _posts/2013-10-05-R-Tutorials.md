@@ -103,6 +103,15 @@ image: /figure
 #### Books
 
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/index.html)
+* [Forecasting: principles and practice](https://www.otexts.org/fpp)
+
+#### Fast-track publishing using knitr (from G-FORGE)
+
+* [part 1](http://gforge.se/2013/12/fast-track-publishing-using-knitr-part-i/)
+* [part 2](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-ii/)
+* [part 3](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-iii/)
+* [part 4](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-iv/)
+* [part 5](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-v/)
 
 #### Others
 
