@@ -104,6 +104,9 @@ image: /figure
 
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/index.html)
 * [Forecasting: principles and practice](https://www.otexts.org/fpp)
+* [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)
+* [Statistical foundations of machine learning](https://www.otexts.org/book/sfml)
+* [Applied biostatistical analysis using R](https://www.otexts.org/book/biostat)
 
 #### Fast-track publishing using knitr (from G-FORGE)
 

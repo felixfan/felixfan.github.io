@@ -3,28 +3,26 @@ title: Softwares
 layout: default
 ---
 
+***
+***
+
+#### Chi-Square Calculator
+
+A Java tool computes cumulative probabilities, based on the chi-square statistic.    
+
+* 2 x 2 contingency table.
+* 2 x 3 contingency table.
+* chi-square statistic and degrees of freedom
+
+ChiSquareCalculator is available at [GitHub](http://felixfan.github.io/ChiSquareCalculator/) 
+
+***
+***
+
 #### RMA normalization for microarray data
 
 Robust Multichip Average (RMA) normalization of normalize microarray data. More details is available at [GitHub](http://felixfan.github.io/GEO/)
 
-***
-***
-
-#### CPPLearning: C++ Examples
-
-C++ examples in book: C++ All-In-One Desk Reference For Dummies, 2nd Edition.
-
-CPPLearning is available at [GitHub](http://felixfan.github.io/CPPLearning/)  
-
-***
-***
-
-#### FunPlots: R Plot for Fun
-
-Plot Heart and Thong using R. 
-   
-FunPlots is available at [GitHub](http://felixfan.github.io/FunPlots/)   
-  
 ***
 ***
 
