@@ -1,7 +1,7 @@
 ---
 title: Trigonometric functions and Differentiation Formulas
 layout: post
-categories: [Finance]
+categories: [Mathematics]
 tags: [Mathematics,Finance]
 image: /figure
 ---
