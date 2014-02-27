@@ -4,7 +4,6 @@ layout: default
 ---
 
 ***
-***
 
 #### Chi-Square Calculator
 
@@ -17,13 +16,26 @@ A Java tool computes cumulative probabilities, based on the chi-square statistic
 ChiSquareCalculator is available at [GitHub](http://felixfan.github.io/ChiSquareCalculator/) 
 
 ***
+
+#### Scientific Calculator
+
+A Java calculator.    
+
+* add, minus, multiply, divide
+* square root, power function
+* exponential function, reciprocal
+* natural logarithm, logarithm
+* sine, cosine, tangent function
+* arc sine, arc cosine, arc tangent function
+
+Calculator is available at [GitHub](http://felixfan.github.io/Calculator/) 
+
 ***
 
 #### RMA normalization for microarray data
 
 Robust Multichip Average (RMA) normalization of normalize microarray data. More details is available at [GitHub](http://felixfan.github.io/GEO/)
 
-***
 ***
 
 #### PubMedWordcloud: PubMed Word Clouds
@@ -34,7 +46,6 @@ More details and examples of using PubMedWordcloud is available [here](http://fe
 
 PubMedWordcloud is available at [CRAN](http://cran.r-project.org/web/packages/PubMedWordcloud/index.html) and [GitHub](https://github.com/felixfan/PubMedWordcloud)
 
-***
 ***
 
 #### FinCal: Time Value of Money, time series analysis and Computational Finance
@@ -52,7 +63,6 @@ More details and examples of using FinCal is available [here](http://felixfan.gi
 FinCal is available at [CRAN](http://cran.r-project.org/web/packages/FinCal/index.html) and [GitHub](https://github.com/felixfan/FinCal)
 
 ***
-***
 
 #### IPGWAS: Integrated Pipeline for Genome-Wide Association Studies
 
@@ -62,5 +72,4 @@ IPGWAS is available at [sourceforge](http://sourceforge.net/projects/ipgwas/).
 
 Citation: Fan YH, Song YQ.IPGWAS: an integrated pipeline for rational quality control and association analysis of genome-wide genetic studies. Biochem Biophys Res Commun. 2012 Jun 8;422(3):363-8. [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/22564732).
 
-***
 ***
