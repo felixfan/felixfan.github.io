@@ -116,6 +116,10 @@ image: /figure
 * [part 4](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-iv/)
 * [part 5](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-v/)
 
+#### Tech-post
+
+* [A million ways to connect R and Excel](http://www.thertrader.com/2014/02/11/a-million-ways-to-connect-r-and-excel/) 
+
 #### Others
 
 * [R tips pages](https://www.zoology.ubc.ca/~schluter/R/)
