@@ -1,11 +1,12 @@
 ---
-title: ggplot2 Cheatsheet from [R for Public Health](http://rforpublichealth.blogspot.hk/)
+title: ggplot2 Cheatsheet from R for Public Health
 layout: post
 categories: [RStudy]
 tags: [R,Plot,ggplot2]
 image: /figure
 ---
 
+[R for Public Health](http://rforpublichealth.blogspot.hk/)   
 
 ```r
 library(ggplot2)
