@@ -6,7 +6,7 @@
 	<a style="color:#000000", href="/about">About</a>
 </h4>
 
-<h3>Felix Yanhui Fan, Ph.D <img src="https://dl.dropboxusercontent.com/u/8272421/felix.jpg" alt="Smiley face" height="84" width="84"/></h3>
+<h3>Felix Yanhui Fan, PhD <img src="https://dl.dropboxusercontent.com/u/8272421/felix.jpg" alt="Smiley face" height="84" width="84"/></h3>
 
 <!--
 <p>I am working in the field of human complex disease research, with specialization in bioinformatics and statistical genetics.</p>
@@ -43,6 +43,8 @@
 	
 </p>
 
+<hr>
+
 <h3>Recent Posts</h3>
 <ul>
   {% for post in site.posts limit: 10 %}
@@ -50,9 +52,15 @@
   {% endfor %}
 </ul>
 
+<hr>
+
 <h3>Tags</h3>
 <ul>
     {% for tag in site.tags %}		
         <li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li>
     {% endfor %}
 </ul>
+
+<hr>
+
+<a href="http://www.tinycounter.com" target="_blank" title="free web counter"><img border="0" alt="free web counter" src="http://mycounter.tinycounter.com/index.php?user=felixfan"></a>
