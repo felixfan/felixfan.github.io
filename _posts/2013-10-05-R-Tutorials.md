@@ -120,6 +120,10 @@ image: /figure
 
 * [A million ways to connect R and Excel](http://www.thertrader.com/2014/02/11/a-million-ways-to-connect-r-and-excel/) 
 
+#### Jobs
+
+* [R-users: let's work together!](http://www.r-users.com/)
+
 #### Others
 
 * [R tips pages](https://www.zoology.ubc.ca/~schluter/R/)
