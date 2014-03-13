@@ -6,7 +6,7 @@ tags: [C++]
 image: /figure
 ---
 
-OS: Windows 7
+OS: Windows 7        
 C++ IDE: [Microsoft Visual Studio Express 2013 for Windows Desktop](http://www.microsoft.com/en-hk/download/details.aspx?id=40787)     
 
 #### Install Boost
