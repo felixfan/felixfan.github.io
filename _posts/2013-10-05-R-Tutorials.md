@@ -43,6 +43,8 @@ image: /figure
 * [plotly | Analyze and visualize data, together](https://plot.ly/)
 * [R-Fiddle: An online playground for R code](http://www.r-fiddle.org/)
 * [Code School - Try R](http://tryr.codeschool.com/)
+* [DataCamp](https://www.datacamp.com/)
+* [OpenIntro Statistics](http://www.openintro.org/stat/)
 
 #### Little Book of R
 
