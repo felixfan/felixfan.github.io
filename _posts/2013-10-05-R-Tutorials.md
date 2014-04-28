@@ -18,6 +18,29 @@ image: /figure
 * [G-FORGE: A BLOG ABOUT ORTHOPAEDIC SURGERY, R, RESEARCH AND MORE](http://gforge.se/)
 * [The Analysis Factor Making Statistics Make Sense](http://www.theanalysisfactor.com/)
 
+#### Online platform and courses
+
+* [swirl: a platform for learning statistics and R simultaneously and interactively](http://ncarchedi.github.io/swirl/)
+* [plotly | Analyze and visualize data, together](https://plot.ly/)
+* [R-Fiddle: An online playground for R code](http://www.r-fiddle.org/)
+* [Code School - Try R](http://tryr.codeschool.com/)
+* [DataCamp](https://www.datacamp.com/)
+* [OpenIntro Statistics](http://www.openintro.org/stat/)
+* [statsTeachR](http://statsteachr.org/)
+* [R Bootcamp](http://jaredknowles.com/r-bootcamp/)
+
+#### Tutorials
+
+* [Quick-R](http://www.statmethods.net/)
+* [A List of Free R Tutorials and Resources in University webpages](http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)   
+* [List of Free Online R Tutorials that are not hosted in the webpages of academic institutes](http://pairach.com/2012/06/17/r_tutorials_non-uni/)
+* [60+ R resources to improve your data skills](http://www.computerworld.com/s/article/9239799/60_R_resources_to_improve_your_data_skills)
+* [inside-R | A Community Site for R | A Community Site for R – Sponsored by Revolution Analytics](http://www.inside-r.org/)
+* [Togaware: One Page R: A Survival Guide to Data Science with R](http://onepager.togaware.com/)
+* [twotorials: how to do stuff in r (two minutes or less video)](http://www.twotorials.com/)
+* [SimpleR: Using R for Introductory Statistics](http://www.math.csi.cuny.edu/Statistics/R/simpleR/printable/simpleR.pdf)
+* [R Tutorial Series](http://rtutorialseries.blogspot.hk/)
+
 #### Finance
 
 * [R/Finance 2013: Applied Finance with R](http://www.rinfinance.com/agenda/)
@@ -37,15 +60,6 @@ image: /figure
 * [RTextTools: a machine learning library for text classification - Blog](http://www.rtexttools.com/)
 * [Forecasting: principles and practice](https://www.otexts.org/fpp/)
 
-#### Online platform
-
-* [swirl: a platform for learning statistics and R simultaneously and interactively](http://ncarchedi.github.io/swirl/)
-* [plotly | Analyze and visualize data, together](https://plot.ly/)
-* [R-Fiddle: An online playground for R code](http://www.r-fiddle.org/)
-* [Code School - Try R](http://tryr.codeschool.com/)
-* [DataCamp](https://www.datacamp.com/)
-* [OpenIntro Statistics](http://www.openintro.org/stat/)
-
 #### Little Book of R
 
 * [a Little Book of R for Multivariate Analysis](http://little-book-of-r-for-multivariate-analysis.readthedocs.org/en/latest/index.html#)
@@ -57,12 +71,6 @@ image: /figure
 
 * [Rcpp](http://www.rcpp.org/)
 * [Rcpp Gallery](http://gallery.rcpp.org/)
-
-#### Tutorial Lists
-
-* [A List of Free R Tutorials and Resources in University webpages](http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)   
-* [List of Free Online R Tutorials that are not hosted in the webpages of academic institutes](http://pairach.com/2012/06/17/r_tutorials_non-uni/)
-* [60+ R resources to improve your data skills](http://www.computerworld.com/s/article/9239799/60_R_resources_to_improve_your_data_skills)
 
 #### R Cookbook
 
@@ -129,15 +137,9 @@ image: /figure
 #### Others
 
 * [R tips pages](https://www.zoology.ubc.ca/~schluter/R/)
-* [Quick-R](http://www.statmethods.net/)
-* [inside-R | A Community Site for R | A Community Site for R – Sponsored by Revolution Analytics](http://www.inside-r.org/)
 * [Statistics for HCI Research](http://yatani.jp/HCIstats/HomePage)
 * [An R Introduction to Statistics | R Tutorial](http://www.r-tutor.com/)
 * [Learning R | Finding my way around R](http://learnr.wordpress.com/)
-* [Togaware: One Page R: A Survival Guide to Data Science with R](http://onepager.togaware.com/)
-* [twotorials: how to do stuff in r (two minutes or less video)](http://www.twotorials.com/)
-* [SimpleR: Using R for Introductory Statistics](http://www.math.csi.cuny.edu/Statistics/R/simpleR/printable/simpleR.pdf)
-* [R Tutorial Series](http://rtutorialseries.blogspot.hk/)
 * [Statistics with R](http://zoonek2.free.fr/UNIX/48_R/all.html)
 * [Introducing R](http://data.princeton.edu/R/)
 * [Musings from a PhD candidate](http://davetang.org/muse/r/)
@@ -146,4 +148,3 @@ image: /figure
 * [Computerworld's Beginners Guide to R](http://blog.revolutionanalytics.com/2013/06/computerworld-guide-to-r.html)
 * [LaTeX/Mathematics - Wikibooks, open books for an open world](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [ggplot2 documentation](http://docs.ggplot2.org/current/)
-* [R Bootcamp](http://jaredknowles.com/r-bootcamp/)
