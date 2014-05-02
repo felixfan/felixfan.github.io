@@ -2,7 +2,7 @@
 title: Genomic inflation factor and population structure
 layout: post
 categories: [Bioinformatics]
-tags: [Genomic Inflation Factor, Population Structure, Bioinformatics, GWAS]
+tags: [Genomic Inflation Factor, Population Structure, Bioinformatics, GWAS,Genetics]
 image: /figure
 ---
 
