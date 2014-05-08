@@ -5,7 +5,7 @@ layout: default
 
 ### Affiliation
 
-Research assistant, Faculty of Dentistry, The University of Hong Kong    
+Postdoctoral fellow, Centre for Genomic Sciences, The University of Hong Kong    
 
 ### Education
 
@@ -15,29 +15,40 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 * B.Eng. in Computer Science and Technology, Northwest A&F University, China, 2006.
 
 ### Experience
-* Research Assistant, University of Hong Kong, Aug 2013 - present
+
+* Postdoctoral fellow, University of Hong Kong, April 2013 - present
+* Research Assistant, University of Hong Kong, Aug 2013 - Mar 2014
 * Senior Research Assistant, University of Hong Kong, Jan 2013 - June 2013
 * Teaching Assistant, Northwest A&F University, Jun 2007 - Jul 2007
 * Student Counselor, Northwest A&F University, Aug 2006 – Jul 2007
 
 ### Professional Membership
+
 * Programmer
 * CFA level 1
 * FRM part 1
 
 ### Languages
+
 * Chinese (Mandarin): native
 * English: fluent
 * Cantonese: basic
 
 ### Computer Skills
+
 * Programming: Perl, R, Java, C++, Python, MySQL, VB, C, Shell scripts
 * OS: Windows, Linux, MAC OS
 * MS Office: Word, Excel, Power Point
 
 ### Open Source Software/package I developed
+
+* Java: [Chi-square calculator](http://felixfan.github.io/ChiSquareCalculator/)
 * Perl: [IPGWAS](http://sourceforge.net/projects/ipgwas/)
-* R: [FinCal](http://cran.r-project.org/web/packages/FinCal/index.html); [PubMedWordclound](http://cran.r-project.org/web/packages/PubMedWordcloud/index.html); [RGenetics](http://cran.r-project.org/web/packages/RGenetics/index.html); [powerAnalysis](http://cran.r-project.org/web/packages/powerAnalysis/index.html)
+* R: [FinCal](http://cran.r-project.org/web/packages/FinCal/index.html); 
+* R: [PubMedWordclound](http://cran.r-project.org/web/packages/PubMedWordcloud/index.html); 
+* R: [RGenetics](http://cran.r-project.org/web/packages/RGenetics/index.html); 
+* R: [powerAnalysis](http://cran.r-project.org/web/packages/powerAnalysis/index.html)
+* R: [bioPredict](http://felixfan.github.io/bioPredict/)
 
 ### Honors and Awards
 
@@ -52,6 +63,7 @@ Research assistant, Faculty of Dentistry, The University of Hong Kong
 
 ### Publications
 
+12. Londono D1, Kou I, Johnson TA, Sharma S, Ogura Y, Tsunoda T, Takahashi A, Matsumoto M, Herring JA, Lam TP, Wang X, Tam EM, Song YQ, Fan YH, Chan D, Cheah KS, Qiu X, Jiang H, Huang D; Japanese Scoliosis Clinical Research Group, TSRHC IS Clinical Group, the International Consortium for Scoliosis Genetics, Su P, Sham P, Cheung KM, Luk KD, Gordon D, Qiu Y, Cheng J, Tang N, Ikegawa S, Wise CA. 2014. A meta-analysis identifies adolescent idiopathic scoliosis association with LBX1 locus in multiple ethnic groups. J Med Genet. Epub ahead of print. [PMID: 24721834](http://www.ncbi.nlm.nih.gov/pubmed/24721834)
 11. Zhou J, To KK-W, Dong H, Cheng Z-S, Lau CC-Y, Poon VKM, **Fan Y-H**, Song Y-Q, Tse H, Chan K-H and others. 2012. A Functional Variation in CD55 Increases the Severity of 2009 Pandemic H1N1 Influenza A Virus Infection. Journal of Infectious Diseases 206(4):495-503. [PMID: 22693232](http://www.ncbi.nlm.nih.gov/pubmed/22693232)
 10. **Fan Y-H**, Song Y-Q. 2012. IPGWAS: An integrated pipeline for rational quality control and association analysis of genome-wide genetic studies. Biochemical and Biophysical Research Communications 422(3):363-368. [PMID: 22564732](http://www.ncbi.nlm.nih.gov/pubmed/22564732)
 9. **Fan Y-H**, Song Y-Q, Chan D, Takahashi Y, Ikegawa S, Matsumoto M, Kou I, Cheah KSE, Sham P, Cheung KMC and others. 2012. SNP rs11190870 near LBX1 is associated with adolescent idiopathic scoliosis in southern Chinese. J Hum Genet 57(4):244-246. [PMID: 22301463](http://www.ncbi.nlm.nih.gov/pubmed/22301463)
