@@ -3,7 +3,7 @@ title: About Me
 layout: default
 ---
 
-I am a research assistant in The University of Hong Kong.    
+I am a postdoctoral fellow in The University of Hong Kong.    
 
 I am working in the field of human complex disease research, with specialization in bioinformatics and statistical genetics.
   
