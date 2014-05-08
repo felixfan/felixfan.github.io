@@ -9,14 +9,14 @@ Postdoctoral fellow, Centre for Genomic Sciences, The University of Hong Kong
 
 ### Education
 
-* Ph.D. in Genetics, The University of Hong Kong, Hong Kong, 2013.
-* M.Sc. in Biochemistry and Molecular Biology, Northwest A&F University, China, 2008. 
-* B.Sc. in Biotechnology, Northwest A&F University, China, 2006.
-* B.Eng. in Computer Science and Technology, Northwest A&F University, China, 2006.
+* Ph.D. in Genetics, The University of Hong Kong, Hong Kong, Jan 2009 - Dec 2012.
+* M.Sc. in Biochemistry and Molecular Biology, Northwest A&F University, China, Sep 2006 - Jul 2008. 
+* B.Sc. in Biotechnology, Northwest A&F University, China, Sep 2002 - Jun 2006.
+* B.Eng. in Computer Science and Technology, Northwest A&F University, China, Jan 2004 - Jun 2006.
 
 ### Experience
 
-* Postdoctoral fellow, University of Hong Kong, April 2013 - present
+* Postdoctoral fellow, University of Hong Kong, Apr 2014 - present
 * Research Assistant, University of Hong Kong, Aug 2013 - Mar 2014
 * Senior Research Assistant, University of Hong Kong, Jan 2013 - June 2013
 * Teaching Assistant, Northwest A&F University, Jun 2007 - Jul 2007
