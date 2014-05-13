@@ -2,7 +2,7 @@
 title: R order(), sort(), rank()
 layout: post
 categories: [RStudy]
-tags: [R,Plot]
+tags: [R]
 image: /figure
 ---
 

@@ -2,7 +2,7 @@
 title: R reading data from Excel, XML and Json
 layout: post
 categories: [RStudy]
-tags: [R,Plot]
+tags: [R]
 image: /figure
 ---
 
