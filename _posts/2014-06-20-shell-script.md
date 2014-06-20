@@ -112,6 +112,59 @@ A $\cup$ B
 sort file1 file2 | uniq
 ```
 
+#### 3.4 Sort file by column
+
+file: 1.txt   
+
+```
+1       2       3
+2       2       4
+1       1       1
+3       4       1
+3       1       2
+10      2       9
+```
+
+**sort -k1,1 1.txt**   # sort by first column
+```
+1       1       1
+1       2       3
+10      2       9
+2       2       4
+3       1       2
+3       4       1
+```
+
+**sort -k1,1 -n 1.txt**  # sort by first column, numeric sort
+```
+1       1       1
+1       2       3
+2       2       4
+3       1       2
+3       4       1
+10      2       9
+```
+
+**sort -k1,1 -k3,3 -n 1.txt**  # then use the third column as a tie breaker
+```
+1       1       1
+1       2       3
+2       2       4
+3       4       1
+3       1       2
+10      2       9
+```
+
+**sort -k1,1 -k3,3 -n -r 1.txt** # reverse the order
+```
+10      2       9
+3       1       2
+3       4       1
+2       2       4
+1       2       3
+1       1       1
+```
+
 ### 4 cut
 
 #### 4.1 Find the most common strings in column 2
@@ -120,24 +173,124 @@ sort file1 file2 | uniq
 cut -f2 file.txt | sort | uniq -c | sort -k1nr | head
 ```
 
-### 5 join
+### 5 split
 
-### 6 paste
-
-### 7 shuf
-
-#### 7.1 Pick 10 random lines from a file:
+#### 5.1 Customize Split File Size using -b option
 
 ```
-shuf file.txt | head -n 10
+split -b2000000 test.txt        # 2Mb perl file
 ```
 
-### 8 echo
-
-#### 8.1 Print all possible 3mer DNA sequence combinations:
+#### 5.2 Customize the Number of Split Chunks using -n option
 
 ```
-echo {A,C,T,G}{A,C,T,G}{A,C,T,G}
+split -n20 test.txt             # create 20 chunks of split files
+```
+
+#### 5.3 Customize Number of Lines using -l option
+
+```
+split -l5000 test.txt             # split files are created with 5000 lines
+```
+
+#### 5.4 Do not generate empty output files with -e option
+
+```
+split -n20 -e test.txt            
+```
+
+### 6 join
+
+#### 6.1 Join two files by matching the first fields
+
+```
+join FILE1 FILE2
+```
+
+#### 6.2 Join two files by matching the first fields, ignore case using -i option
+
+```
+join -i FILE1 FILE2
+```
+
+#### 6.3  Also print unpairable lines from file FILENUM using -a option
+
+where FILENUM is 1 or 2, corresponding to FILE1 or FILE2     
+```
+join -a1 FILE1 FILE2           ## also print unpairable lines from FILE1
+```
+
+#### 6.4 Print only unpaired lines using -v option
+
+```
+join -v FILE1 FILE2           ## only print unpaired lines
+```
+
+#### 6.5 Join based on different columns from both biles using -1 and -2 option
+
+```
+join -1 2 -2 1 FILE1 FILE2  
+##join based on the second column of FILE1 and the first column of FILE2         
+```
+
+### 7 paste
+paste is used to create columns of data with a user-specified delimiter.   
+
+a.txt    
+```
+a
+b
+c
+```
+
+b.txt    
+```
+1
+2
+3
+```
+
+**paste a.txt b.txt**   
+```
+a       1
+b       2
+c       3
+```
+
+**paste b.txt a.txt**   
+```
+1       a
+2       b
+3       c
+```
+
+**paste -d ',' a.txt b.txt**   
+```
+a,1
+b,2
+c,3
+```
+
+### 8 cat
+
+**cat a.txt b.txt**   
+```
+a
+b
+c
+1
+2
+3
+```
+
+**cat b.txt a.txt**    
+```
+1
+2
+3
+a
+b
+c
 ```
 
 ### 9 Conditionals
@@ -197,6 +350,22 @@ do
   echo "Welcome $x times"
   x=$(( $x + 1 ))
 done
+```
+
+### 11 shuf
+
+#### 11.1 Pick 10 random lines from a file:
+
+```
+shuf file.txt | head -n 10
+```
+
+### 12 echo
+
+#### 12.1 Print all possible 3mer DNA sequence combinations:
+
+```
+echo {A,C,T,G}{A,C,T,G}{A,C,T,G}
 ```
 
 ### References:
