@@ -101,6 +101,7 @@ sort file.txt | uniq | wc -l
 #### 3.2 Find number of lines shared by 2 files:
 
 A $\cap$ B
+
 ```
 sort file1 file2 | uniq -d
 ```
@@ -108,6 +109,7 @@ sort file1 file2 | uniq -d
 #### 3.3 Find number of unique lines in 2 files:
 
 A $\cup$ B
+
 ```
 sort file1 file2 | uniq
 ```
@@ -125,7 +127,8 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 1.txt**   # sort by first column
+**sort -k1,1 1.txt**   # sort by first column     
+
 ```
 1       1       1
 1       2       3
@@ -135,7 +138,8 @@ file: 1.txt
 3       4       1
 ```
 
-**sort -k1,1 -n 1.txt**  # sort by first column, numeric sort
+**sort -k1,1 -n 1.txt**  # sort by first column, numeric sort    
+
 ```
 1       1       1
 1       2       3
@@ -145,7 +149,8 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 -k3,3 -n 1.txt**  # then use the third column as a tie breaker
+**sort -k1,1 -k3,3 -n 1.txt**  # then use the third column as a tie breaker     
+
 ```
 1       1       1
 1       2       3
@@ -155,7 +160,8 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 -k3,3 -n -r 1.txt** # reverse the order
+**sort -k1,1 -k3,3 -n -r 1.txt** # reverse the order   
+
 ```
 10      2       9
 3       1       2
@@ -215,7 +221,8 @@ join -i FILE1 FILE2
 
 #### 6.3  Also print unpairable lines from file FILENUM using -a option
 
-where FILENUM is 1 or 2, corresponding to FILE1 or FILE2     
+where FILENUM is 1 or 2, corresponding to FILE1 or FILE2    
+
 ```
 join -a1 FILE1 FILE2           ## also print unpairable lines from FILE1
 ```
@@ -234,37 +241,43 @@ join -1 2 -2 1 FILE1 FILE2
 ```
 
 ### 7 paste
-paste is used to create columns of data with a user-specified delimiter.   
 
-a.txt    
+paste is used to create columns of data with a user-specified delimiter.      
+
+a.txt     
+
 ```
 a
 b
 c
 ```
 
-b.txt    
+b.txt     
+
 ```
 1
 2
 3
 ```
 
-**paste a.txt b.txt**   
+**paste a.txt b.txt**     
+
 ```
 a       1
 b       2
 c       3
 ```
 
-**paste b.txt a.txt**   
+**paste b.txt a.txt**     
+
 ```
 1       a
 2       b
 3       c
 ```
 
-**paste -d ',' a.txt b.txt**   
+**paste -d ',' a.txt b.txt**     
+
 ```
 a,1
 b,2
@@ -273,7 +286,8 @@ c,3
 
 ### 8 cat
 
-**cat a.txt b.txt**   
+**cat a.txt b.txt**     
+
 ```
 a
 b
@@ -283,7 +297,8 @@ c
 3
 ```
 
-**cat b.txt a.txt**    
+**cat b.txt a.txt**      
+
 ```
 1
 2
@@ -320,6 +335,7 @@ else
         echo "x is larger than 5"
 fi
 ```
+
 ### 10 Loops
 
 ```
