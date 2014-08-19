@@ -1,12 +1,12 @@
 ---
-title: Quantification of Relationship Between Allele Frequencies and $r^2$
+title: Quantification of Relationship Between Allele Frequencies and <span class="math">\(r^2\)</span>
 layout: post
 categories: [Bioinformatics]
 tags: [Bioinformatics, GWAS, Genetics,ggplot2]
 image: /figure
 ---
 
-If alleles A and B are the coupled alleles at two different loci and if $p_{B} = p_{A} + v$, with v = 0, and if $r^2$ exceeds some threshold t, then   
+<p>If alleles A and B are the coupled alleles at two different loci and if <span class="math">\(p_{B} = p_{A} + v\)</span>, with v = 0, and if <span class="math">\(r^2\)</span> exceeds some threshold t, then</p>  
 
 $$v_{min} = p_{A}(1 - p_{A})(1 - t)/(1 - p_{A}(1 - t))$$
 $$v_{max} = p_{A}(1 - p_{A})(1 - t)/(p_{A}(1 - t) + t)$$
@@ -31,7 +31,7 @@ df2 <- transform(df,
                  )
 ```
 
-### Maximum difference $v_{max}$ between allele frequency between loci given $r^2$
+<h3>Maximum difference <span class="math">\(v_{max}\)</span> between allele frequency between loci given <span class="math">\(r^2\)</span></h3>
 
 
 ```r
