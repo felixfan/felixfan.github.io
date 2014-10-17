@@ -1,5 +1,11 @@
 # Pair-wise comparisons plot
-
+---
+title: Pair-wise comparisons plot
+layout: post
+categories: [RStudy]
+tags: [R,Plot,ggplot2]
+image: /figure
+---
 
 ```r
 id <- c("A","B","C","D","E","F","G","H")
