@@ -1,4 +1,3 @@
-# Pair-wise comparisons plot
 ---
 title: Pair-wise comparisons plot
 layout: post
