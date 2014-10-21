@@ -27,7 +27,7 @@ head(airquality)
 boxplot(Ozone ~ Month, data = airquality, xlab = "Month", ylab = "Ozone")
 ```
 
-![plot of chunk reoder-relabel-1](figure/reoder-relabel-1.png) 
+![plot of chunk reoder-relabel-1](/figure/reoder-relabel-1.png) 
 
 
 ### Sort the months by their median
@@ -45,7 +45,7 @@ plotOrder = as.integer(names(st))
 boxplot(Ozone ~ Month, at = plotOrder, xlab = "Month", ylab = "Ozone")
 ```
 
-![plot of chunk reoder-relabel-2](figure/reoder-relabel-2.png) 
+![plot of chunk reoder-relabel-2](/figure/reoder-relabel-2.png) 
 
 
 ### Alter the x-axis tick labels (include the median of Ozone in parentheses)
@@ -60,5 +60,5 @@ boxplot(Ozone ~ Month, at = plotOrder, xaxt = "n")
 axis(side = 1, label = mylabels, at = 1:length(mylabels))
 ```
 
-![plot of chunk reoder-relabel-3](figure/reoder-relabel-3.png) 
+![plot of chunk reoder-relabel-3](/figure/reoder-relabel-3.png) 
 
