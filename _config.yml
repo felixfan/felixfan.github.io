@@ -1,29 +1,22 @@
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data","superscript","highlight"]
-
 permalink: /:title/
-highlighter: pygments
-
-name: "Statistics and Programming!"
-about: "Felix Yanhui Fan's personal website"
-
+url: http://felixfan.github.io
+name: "Statistics and Programming"
 author: Felix Yanhui Fan
 email: felixfanyh@gmail.com
 github: felixfan
-duoshuo: felixfanyh
-
-url: "http://localhost:4000"
-
+duoshuo: felixfan
+highlighter: pygments
 gems: ["jekyll-paginate"]
 paginate: 20
 paginate_path: "page:num"
-
 analytics :
   provider : google
   google :
     tracking_id : 'UA-44240871-1'
-
 tags:
 - jekyll
 - code
+about: "Felix Yanhui Fan's personal website"
