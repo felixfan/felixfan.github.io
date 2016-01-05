@@ -1,5 +1,5 @@
 ---
-title: Quantification of Relationship Between Allele Frequencies and <span class="math">\(r^2\)</span>
+title: Quantification of Relationship Between Allele Frequencies and r squared
 layout: post
 categories: [Bioinformatics]
 tags: [Bioinformatics, GWAS, Genetics,ggplot2]
@@ -9,8 +9,8 @@ image: /figure
 
 <p>If alleles A and B are the coupled alleles at two different loci and if <span class="math">\(p_{B} = p_{A} + v\)</span>, with v = 0, and if <span class="math">\(r^2\)</span> exceeds some threshold t, then</p>
 
-$$v_{min} = p_{A}(1 - p_{A})(1 - t)/(1 - p_{A}(1 - t))$$
-$$v_{max} = p_{A}(1 - p_{A})(1 - t)/(p_{A}(1 - t) + t)$$
+\\[ v_{min} = \frac{p_{A}(1 - p_{A})(1 - t)}{(1 - p_{A}(1 - t))} \\]
+\\[ v_{max} = \frac{p_{A}(1 - p_{A})(1 - t)}{(p_{A}(1 - t) + t)} \\]
 
 
 ```r
