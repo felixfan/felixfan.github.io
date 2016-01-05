@@ -13,11 +13,20 @@ comments: no
 {% if site.qq %}
 ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
 {% endif %}
+
 网站：[{{ site.name }}]({{ site.url }})
 
 邮箱：[{{ site.email }}](mailto:{{ site.email }})
 
 GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+
+{% if site.researchgate %}
+ResearchGate：[https://www.researchgate.net/profile/{{ site.researchgate }}](https://www.researchgate.net/profile/{{ site.researchgate }})
+{% endif %}
+
+{% if site.linkedin %}
+LinkedIn：[http://www.linkedin.com/in/{{ site.linkedin }}](http://www.linkedin.com/in/{{ site.linkedin }})
+{% endif %}
 
 ----
 
