@@ -249,8 +249,8 @@ loaded via a namespace (and not attached):
 ```
 
 
-### Further Reading
-[Tutorial: Analysing microarray data in BioConductor](http://www.biostars.org/p/53870/)
-[Using Bioconductor for Microarray Analysis](http://www.bioconductor.org/help/workflows/oligo-arrays/)
-[Methods of RMA Normalization for Affymetrix GeneChip Arrays](http://www.tm4.org/normalizing.html)
-[A Comparison of Normalization Methods for High Density Oligonucleotide Array Data Based on Bias and Variance. Bioinformatics 19(2):185-193](http://bioinformatics.oxfordjournals.org/content/19/2/185.abstract)
+### Further Reading            
+[Tutorial: Analysing microarray data in BioConductor](http://www.biostars.org/p/53870/)         
+[Using Bioconductor for Microarray Analysis](http://www.bioconductor.org/help/workflows/oligo-arrays/)          
+[Methods of RMA Normalization for Affymetrix GeneChip Arrays](http://www.tm4.org/normalizing.html)           
+[A Comparison of Normalization Methods for High Density Oligonucleotide Array Data Based on Bias and Variance. Bioinformatics 19(2):185-193](http://bioinformatics.oxfordjournals.org/content/19/2/185.abstract)          

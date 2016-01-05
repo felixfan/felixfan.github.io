@@ -98,7 +98,7 @@ join genomicCoordinates.sort.txt output.sort.txt | awk '{if($2==$5 && $3==$6) pr
 
 Use "--update-map updateIDs.txt --update-name" command of PLINK to update SNP IDs.
 
-**Reference**
+**Reference**         
 
-[Reg. Updating SNP ids for SNPs on Illumina HumanOmni2.5M array](http://redmine.soe.ucsc.edu/forum/index.php?t=msg&goto=13224&S=29fba0172e0e677085609b8e1da196cb)
-[PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)
+[Reg. Updating SNP ids for SNPs on Illumina HumanOmni2.5M array](http://redmine.soe.ucsc.edu/forum/index.php?t=msg&goto=13224&S=29fba0172e0e677085609b8e1da196cb)         
+[PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)         

@@ -39,8 +39,8 @@ Here the test is not "is my SNP independent of the covariate", but instead "if I
 
 * Testing for interactions answers a different question: Does the association between SNP1 and my trait differ by SNP2 genotype? This is a gene-gene interaction. Or you might ask if SNP1 behaves differently among statin drug users versus non-users. This would be testing a gene-environment interaction.
 
-### Further Reading
-[Biostar](http://www.biostars.org/p/14914/)
-[PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/anal.shtml)
-[Informed conditioning on clinical covariates increases power in case-control association studies. PLoS Genet. 2012;8(11):e1003032](http://www.ncbi.nlm.nih.gov/pubmed/23144628)
-[The Covariate's Dilemma. PLoS Genet. 2012 November; 8(11): e1003096.](http://www.ncbi.nlm.nih.gov/pubmed/23162385)
+### Further Reading        
+[Biostar](http://www.biostars.org/p/14914/)         
+[PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/anal.shtml)          
+[Informed conditioning on clinical covariates increases power in case-control association studies. PLoS Genet. 2012;8(11):e1003032](http://www.ncbi.nlm.nih.gov/pubmed/23144628)         
+[The Covariate's Dilemma. PLoS Genet. 2012 November; 8(11): e1003096.](http://www.ncbi.nlm.nih.gov/pubmed/23162385)        

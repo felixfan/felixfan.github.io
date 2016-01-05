@@ -394,9 +394,9 @@ strsplit(x, split = "")
 | gsub() | replaces one pattern with another at every matching location |
 | strsplit() | breaks apart strings at predefined points |
 
-### 9. References
+### 9. References          
 
-[Regular expressions in R](http://www.johndcook.com/r_language_regex.html)
-[Regular Expressions with The R Language](http://www.regular-expressions.info/rlanguage.html)
-[http://en.wikibooks.org/wiki/R_Programming/Text_Processing](http://en.wikibooks.org/wiki/R_Programming/Text_Processing)
-[R Regular Expression](http://www.endmemo.com/program/R/grep.php)
+[Regular expressions in R](http://www.johndcook.com/r_language_regex.html)          
+[Regular Expressions with The R Language](http://www.regular-expressions.info/rlanguage.html)         
+[http://en.wikibooks.org/wiki/R_Programming/Text_Processing](http://en.wikibooks.org/wiki/R_Programming/Text_Processing)        
+[R Regular Expression](http://www.endmemo.com/program/R/grep.php)         

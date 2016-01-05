@@ -44,11 +44,11 @@ Data are collected in an observational study if we passively record (observe) va
 
 In an experiment, the researcher actively changes some characteristics of the units before the data are collected. The values of some variables are therefore under the control of the experimenter. In other words, the experimenter is able to choose each individual's values for some variables.
 
-### References
-[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c1.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c1.html)
-[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c2.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c2.html)
-[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c3.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c3.html)
-[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c4.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c4.html)
-[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c5.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c5.html)
-[Correlation, causation, and association - What does it all mean???](http://www.psychologytoday.com/blog/all-about-addiction/201003/correlation-causation-and-association-what-does-it-all-mean)
+### References         
+[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c1.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c1.html)          
+[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c2.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c2.html)           
+[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c3.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c3.html)             
+[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c4.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c4.html)             
+[http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c5.html](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/Hcausal/causal_c5.html)          
+[Correlation, causation, and association - What does it all mean???](http://www.psychologytoday.com/blog/all-about-addiction/201003/correlation-causation-and-association-what-does-it-all-mean)          
 

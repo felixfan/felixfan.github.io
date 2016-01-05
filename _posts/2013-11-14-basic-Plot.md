@@ -339,7 +339,7 @@ legend("topright", inset = 0.05, title = "Number of Cylinders", c("4", "6",
 ![plot of chunk basicplot19](/figure/basicplot19.png)
 
 
-### Further reading
-[Quick-R: Basic Graphs](http://www.statmethods.net/graphs/)
+### Further reading       
+[Quick-R: Basic Graphs](http://www.statmethods.net/graphs/)        
 
 

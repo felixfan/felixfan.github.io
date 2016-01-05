@@ -43,10 +43,10 @@ Map zi4.map
 initexmf --mkmaps
 ```
 
-It works now.
-Have fun!
+It works now.       
+Have fun!        
 
-**Note**: You need to update R to **3.0.2** first. Or check this [post](http://r.789695.n4.nabble.com/inconsolata-sty-is-liable-to-disappear-texinfo-5-1-td4669976.html) to fix **"inconsolata.sty is not available"** problem first.
+**Note**: You need to update R to **3.0.2** first. Or check this [post](http://r.789695.n4.nabble.com/inconsolata-sty-is-liable-to-disappear-texinfo-5-1-td4669976.html) to fix **"inconsolata.sty is not available"** problem first.            
 
-[Reference](http://tex.stackexchange.com/questions/125274/error-font-ts1-zi4r-at-540-not-found)
+[Reference](http://tex.stackexchange.com/questions/125274/error-font-ts1-zi4r-at-540-not-found)           
 

@@ -661,6 +661,7 @@ rating <- ordered(rating)
 ```
 
 
-**References**
-[Quick-R: Data type](http://www.statmethods.net/input/datatypes.html)
-[R Tutorial: Data Frame](http://www.r-tutor.com/r-introduction/data-frame)
+**References**    
+       
+[Quick-R: Data type](http://www.statmethods.net/input/datatypes.html)          
+[R Tutorial: Data Frame](http://www.r-tutor.com/r-introduction/data-frame)          
