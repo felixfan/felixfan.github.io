@@ -5,18 +5,19 @@ categories: [RStudy]
 tags: [R,Plot]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Artificial data
 
 ```r
 set.seed(99999)
-mydata = data.frame(x = rep(1:5, times = 2), y = rnorm(10, 10), z = rep(c("a", 
-    "b"), each = 5))
+mydata = data.frame(x = rep(1:5, times = 2), y = rnorm(10, 10), z = rep(c("a",
+"b"), each = 5))
 mydata
 ```
 
 ```
-   x      y z
+x      y z
 1  1  9.574 a
 2  2  9.717 a
 3  3  9.101 a
@@ -32,7 +33,7 @@ mydata
 
 ### Plot
 
-Same x axis but different y axis.      
+Same x axis but different y axis.
 
 
 ```r
@@ -45,8 +46,8 @@ par(mfrow = c(2, 1), mar = c(0, 4.1, 4, 2))
 # the plot.  The default is c(5, 4, 4, 2) + 0.1.
 
 # first plot
-plot(y ~ x, data = mydata, axes = FALSE, frame.plot = TRUE, xlab = "", main = "Two plot with equal size", 
-    col = c("red", "green")[mydata$z], ylim = c(9, 13))
+plot(y ~ x, data = mydata, axes = FALSE, frame.plot = TRUE, xlab = "", main = "Two plot with equal size",
+col = c("red", "green")[mydata$z], ylim = c(9, 13))
 # The option axes=FALSE suppresses both x and y axes.  xaxt='n' and yaxt='n'
 # suppress the x and y axis respectively.
 
@@ -68,8 +69,8 @@ axis(side = 2, las = 1)
 # second plot
 par(mar = c(4, 4.1, 0, 2))
 
-plot(log(y) ~ x, data = mydata, axes = FALSE, frame.plot = TRUE, xlab = "x", 
-    ylab = "log(y)", col = c("red", "green")[mydata$z], ylim = c(2, 3))
+plot(log(y) ~ x, data = mydata, axes = FALSE, frame.plot = TRUE, xlab = "x",
+ylab = "log(y)", col = c("red", "green")[mydata$z], ylim = c(2, 3))
 
 # add y axis
 axis(side = 2, las = 1)
@@ -78,6 +79,6 @@ axis(side = 2, las = 1)
 axis(side = 1)
 ```
 
-![plot of chunk same-size-plot](/figure/same-size-plot.png) 
+![plot of chunk same-size-plot](/figure/same-size-plot.png)
 
 

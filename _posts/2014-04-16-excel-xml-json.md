@@ -5,8 +5,9 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
-what I have learned from coursera course [Getting and Cleaning Data](https://class.coursera.org/getdata-002).   
+what I have learned from coursera course [Getting and Cleaning Data](https://class.coursera.org/getdata-002).
 
 ### Reading Excel Files
 
@@ -23,8 +24,8 @@ mydata = read.xlsx("data.xlsx", sheetIndex = 1, header = TRUE)
 
 
 ```r
-mydata = read.xlsx("data.xlsx", sheetIndex = 1, header = TRUE, colIndex = 2:3, 
-    rowIndex = 1:4)
+mydata = read.xlsx("data.xlsx", sheetIndex = 1, header = TRUE, colIndex = 2:3,
+rowIndex = 1:4)
 ```
 
 
@@ -48,8 +49,8 @@ names(rootNode)
 ```
 
 ```
-  food   food   food   food   food 
-"food" "food" "food" "food" "food" 
+food   food   food   food   food
+"food" "food" "food" "food" "food"
 ```
 
 
@@ -62,11 +63,11 @@ rootNode[[1]]
 
 ```
 <food>
-  <name>Belgian Waffles</name>
-  <price>$5.95</price>
-  <description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
-  <calories>650</calories>
-</food> 
+<name>Belgian Waffles</name>
+<price>$5.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<calories>650</calories>
+</food>
 ```
 
 ```r
@@ -74,7 +75,7 @@ rootNode[[1]][[1]]
 ```
 
 ```
-<name>Belgian Waffles</name> 
+<name>Belgian Waffles</name>
 ```
 
 
@@ -86,16 +87,16 @@ xmlSApply(rootNode, xmlValue)
 ```
 
 ```
-                                                                                                                    food 
-                              "Belgian Waffles$5.95Two of our famous Belgian Waffles with plenty of real maple syrup650" 
-                                                                                                                    food 
-                   "Strawberry Belgian Waffles$7.95Light Belgian waffles covered with strawberries and whipped cream900" 
-                                                                                                                    food 
-"Berry-Berry Belgian Waffles$8.95Light Belgian waffles covered with an assortment of fresh berries and whipped cream900" 
-                                                                                                                    food 
-                                               "French Toast$4.50Thick slices made from our homemade sourdough bread600" 
-                                                                                                                    food 
-                        "Homestyle Breakfast$6.95Two eggs, bacon or sausage, toast, and our ever-popular hash browns950" 
+food
+"Belgian Waffles$5.95Two of our famous Belgian Waffles with plenty of real maple syrup650"
+food
+"Strawberry Belgian Waffles$7.95Light Belgian waffles covered with strawberries and whipped cream900"
+food
+"Berry-Berry Belgian Waffles$8.95Light Belgian waffles covered with an assortment of fresh berries and whipped cream900"
+food
+"French Toast$4.50Thick slices made from our homemade sourdough bread600"
+food
+"Homestyle Breakfast$6.95Two eggs, bacon or sausage, toast, and our ever-popular hash browns950"
 ```
 
 
@@ -107,9 +108,9 @@ xpathSApply(rootNode, "//name", xmlValue)
 ```
 
 ```
-[1] "Belgian Waffles"             "Strawberry Belgian Waffles" 
-[3] "Berry-Berry Belgian Waffles" "French Toast"               
-[5] "Homestyle Breakfast"        
+[1] "Belgian Waffles"             "Strawberry Belgian Waffles"
+[3] "Berry-Berry Belgian Waffles" "French Toast"
+[5] "Homestyle Breakfast"
 ```
 
 ```r
@@ -123,7 +124,7 @@ xpathSApply(rootNode, "//price", xmlValue)
 
 #### Extract content by attributes
 
-Use htmlTreeParse when the content is known to be (potentially malformed) HTML.   
+Use htmlTreeParse when the content is known to be (potentially malformed) HTML.
 
 
 ```r
@@ -134,9 +135,9 @@ scores
 ```
 
 ```
- [1] "49-27"    "14-6"     "30-9"     "23-20"    "26-23"    "19-17"   
- [7] "19-16"    "24-18"    "20-17 OT" "23-20 OT" "19-3"     "22-20"   
-[13] "29-26"    "18-16"    "41-7"     "34-17"   
+[1] "49-27"    "14-6"     "30-9"     "23-20"    "26-23"    "19-17"
+[7] "19-16"    "24-18"    "20-17 OT" "23-20 OT" "19-3"     "22-20"
+[13] "29-26"    "18-16"    "41-7"     "34-17"
 ```
 
 ```r
@@ -145,10 +146,10 @@ teams
 ```
 
 ```
- [1] "Denver"      "Cleveland"   "Houston"     "Buffalo"     "Miami"      
- [6] "Green Bay"   "Pittsburgh"  "Cleveland"   "Cincinnati"  "Chicago"    
+[1] "Denver"      "Cleveland"   "Houston"     "Buffalo"     "Miami"
+[6] "Green Bay"   "Pittsburgh"  "Cleveland"   "Cincinnati"  "Chicago"
 [11] "New York"    "Pittsburgh"  "Minnesota"   "Detroit"     "New England"
-[16] "Cincinnati" 
+[16] "Cincinnati"
 ```
 
 
@@ -162,28 +163,28 @@ names(jsonData)
 ```
 
 ```
- [1] "id"                "name"              "full_name"        
- [4] "owner"             "private"           "html_url"         
- [7] "description"       "fork"              "url"              
+[1] "id"                "name"              "full_name"
+[4] "owner"             "private"           "html_url"
+[7] "description"       "fork"              "url"
 [10] "forks_url"         "keys_url"          "collaborators_url"
-[13] "teams_url"         "hooks_url"         "issue_events_url" 
-[16] "events_url"        "assignees_url"     "branches_url"     
-[19] "tags_url"          "blobs_url"         "git_tags_url"     
-[22] "git_refs_url"      "trees_url"         "statuses_url"     
-[25] "languages_url"     "stargazers_url"    "contributors_url" 
-[28] "subscribers_url"   "subscription_url"  "commits_url"      
+[13] "teams_url"         "hooks_url"         "issue_events_url"
+[16] "events_url"        "assignees_url"     "branches_url"
+[19] "tags_url"          "blobs_url"         "git_tags_url"
+[22] "git_refs_url"      "trees_url"         "statuses_url"
+[25] "languages_url"     "stargazers_url"    "contributors_url"
+[28] "subscribers_url"   "subscription_url"  "commits_url"
 [31] "git_commits_url"   "comments_url"      "issue_comment_url"
-[34] "contents_url"      "compare_url"       "merges_url"       
-[37] "archive_url"       "downloads_url"     "issues_url"       
+[34] "contents_url"      "compare_url"       "merges_url"
+[37] "archive_url"       "downloads_url"     "issues_url"
 [40] "pulls_url"         "milestones_url"    "notifications_url"
-[43] "labels_url"        "releases_url"      "created_at"       
-[46] "updated_at"        "pushed_at"         "git_url"          
-[49] "ssh_url"           "clone_url"         "svn_url"          
-[52] "homepage"          "size"              "stargazers_count" 
-[55] "watchers_count"    "language"          "has_issues"       
-[58] "has_downloads"     "has_wiki"          "forks_count"      
-[61] "mirror_url"        "open_issues_count" "forks"            
-[64] "open_issues"       "watchers"          "default_branch"   
+[43] "labels_url"        "releases_url"      "created_at"
+[46] "updated_at"        "pushed_at"         "git_url"
+[49] "ssh_url"           "clone_url"         "svn_url"
+[52] "homepage"          "size"              "stargazers_count"
+[55] "watchers_count"    "language"          "has_issues"
+[58] "has_downloads"     "has_wiki"          "forks_count"
+[61] "mirror_url"        "open_issues_count" "forks"
+[64] "open_issues"       "watchers"          "default_branch"
 ```
 
 ```r
@@ -191,12 +192,12 @@ names(jsonData$owner)
 ```
 
 ```
- [1] "login"               "id"                  "avatar_url"         
- [4] "gravatar_id"         "url"                 "html_url"           
- [7] "followers_url"       "following_url"       "gists_url"          
-[10] "starred_url"         "subscriptions_url"   "organizations_url"  
+[1] "login"               "id"                  "avatar_url"
+[4] "gravatar_id"         "url"                 "html_url"
+[7] "followers_url"       "following_url"       "gists_url"
+[10] "starred_url"         "subscriptions_url"   "organizations_url"
 [13] "repos_url"           "events_url"          "received_events_url"
-[16] "type"                "site_admin"         
+[16] "type"                "site_admin"
 ```
 
 ```r
@@ -204,8 +205,8 @@ jsonData$owner$login
 ```
 
 ```
- [1] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
- [7] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
+[1] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
+[7] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
 [13] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
 [19] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
 [25] "felixfan" "felixfan" "felixfan" "felixfan" "felixfan" "felixfan"
@@ -216,21 +217,21 @@ jsonData$name
 ```
 
 ```
- [1] "biojava"                "Calculator"            
- [3] "ChiSquareCalculator"    "coursera-android"      
- [5] "CPPLearning"            "datasciencecoursera"   
- [7] "datasharing"            "devtools"              
- [9] "felixfan.github.io"     "FinCal"                
-[11] "FunPlots"               "GEO"                   
-[13] "IntroRandLaTeXforIR"    "IPGWAS"                
-[15] "JavaSwing"              "jekyll"                
-[17] "labs"                   "libsvm"                
-[19] "markdown-here"          "OG-Platform"           
-[21] "oneliners"              "pages"                 
+[1] "biojava"                "Calculator"
+[3] "ChiSquareCalculator"    "coursera-android"
+[5] "CPPLearning"            "datasciencecoursera"
+[7] "datasharing"            "devtools"
+[9] "felixfan.github.io"     "FinCal"
+[11] "FunPlots"               "GEO"
+[13] "IntroRandLaTeXforIR"    "IPGWAS"
+[15] "JavaSwing"              "jekyll"
+[17] "labs"                   "libsvm"
+[19] "markdown-here"          "OG-Platform"
+[21] "oneliners"              "pages"
 [23] "powerAnalysis"          "ProgrammingAssignment2"
-[25] "PubMedWordcloud"        "R-Graphics"            
-[27] "random-forest"          "RGenetics"             
-[29] "slidify"                "styles"                
+[25] "PubMedWordcloud"        "R-Graphics"
+[27] "random-forest"          "RGenetics"
+[29] "slidify"                "styles"
 ```
 
 ```r
@@ -239,7 +240,7 @@ jsonData[jsonData$name == "FinCal", c("created_at", "updated_at")]
 ```
 
 ```
-             created_at           updated_at
+created_at           updated_at
 10 2013-09-24T06:25:02Z 2013-12-23T07:31:54Z
 ```
 
@@ -249,7 +250,7 @@ jsonData[, c("name", "created_at", "updated_at")]
 ```
 
 ```
-                     name           created_at           updated_at
+name           created_at           updated_at
 1                 biojava 2014-02-25T08:34:06Z 2014-02-25T08:34:07Z
 2              Calculator 2014-01-20T06:14:33Z 2014-02-27T09:12:59Z
 3     ChiSquareCalculator 2014-02-21T06:52:11Z 2014-02-21T07:32:04Z

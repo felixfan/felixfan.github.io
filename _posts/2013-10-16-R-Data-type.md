@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### vectors and assignment
 
@@ -49,7 +50,7 @@ a
 ```
 
 ```
- [1] 10.0  5.0  3.0  6.0 21.0 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0
+[1] 10.0  5.0  3.0  6.0 21.0 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0
 [15]  7.0
 ```
 
@@ -178,8 +179,8 @@ summary(v)
 ```
 
 ```
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   10.1    16.6    19.4    28.4    31.4    64.7 
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+10.1    16.6    19.4    28.4    31.4    64.7
 ```
 
 ```r
@@ -226,7 +227,7 @@ s3
 ```
 
 ```
- [1] -5.0 -4.8 -4.6 -4.4 -4.2 -4.0 -3.8 -3.6 -3.4 -3.2 -3.0 -2.8 -2.6 -2.4
+[1] -5.0 -4.8 -4.6 -4.4 -4.2 -4.0 -3.8 -3.6 -3.4 -3.2 -3.0 -2.8 -2.6 -2.4
 [15] -2.2 -2.0 -1.8 -1.6 -1.4 -1.2 -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4
 [29]  0.6  0.8  1.0  1.2  1.4  1.6  1.8  2.0  2.2  2.4  2.6  2.8  3.0  3.2
 [43]  3.4  3.6  3.8  4.0  4.2  4.4  4.6  4.8  5.0
@@ -240,7 +241,7 @@ s4
 ```
 
 ```
- [1] -5.0 -4.8 -4.6 -4.4 -4.2 -4.0 -3.8 -3.6 -3.4 -3.2 -3.0 -2.8 -2.6 -2.4
+[1] -5.0 -4.8 -4.6 -4.4 -4.2 -4.0 -3.8 -3.6 -3.4 -3.2 -3.0 -2.8 -2.6 -2.4
 [15] -2.2 -2.0 -1.8 -1.6 -1.4 -1.2 -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4
 [29]  0.6  0.8  1.0  1.2  1.4  1.6  1.8  2.0  2.2  2.4  2.6  2.8  3.0  3.2
 [43]  3.4  3.6  3.8  4.0  4.2  4.4  4.6  4.8  5.0
@@ -254,7 +255,7 @@ s5
 ```
 
 ```
- [1] 10  5  3  6 21 10  5  3  6 21 10  5  3  6 21 10  5  3  6 21 10  5  3
+[1] 10  5  3  6 21 10  5  3  6 21 10  5  3  6 21 10  5  3  6 21 10  5  3
 [24]  6 21
 ```
 
@@ -266,7 +267,7 @@ s6
 ```
 
 ```
- [1] 10 10 10 10 10  5  5  5  5  5  3  3  3  3  3  6  6  6  6  6 21 21 21
+[1] 10 10 10 10 10  5  5  5  5  5  3  3  3  3  3  6  6  6  6  6 21 21 21
 [24] 21 21
 ```
 
@@ -276,7 +277,7 @@ a
 ```
 
 ```
- [1] 10.0  5.0  3.0  6.0 21.0 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0
+[1] 10.0  5.0  3.0  6.0 21.0 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0
 [15]  7.0
 ```
 
@@ -295,7 +296,7 @@ a[-(1:5)]
 ```
 
 ```
- [1] 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0  7.0
+[1] 10.4  5.6  3.1  6.4 21.7  4.0  6.0  1.0  4.0  7.0
 ```
 
 ```r
@@ -319,8 +320,8 @@ x <- matrix(1:20, nrow = 5, ncol = 4)
 cells <- c(1, 26, 24, 68)
 rnames <- c("R1", "R2")
 cnames <- c("C1", "C2")
-mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames, 
-    cnames))
+mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames,
+cnames))
 
 # Combining Matrices
 B = matrix(c(2, 4, 3, 1, 5, 7), nrow = 3, ncol = 2)
@@ -329,7 +330,7 @@ cbind(B, C)
 ```
 
 ```
-     [,1] [,2] [,3]
+[,1] [,2] [,3]
 [1,]    2    1    7
 [2,]    4    5    4
 [3,]    3    7    2
@@ -342,7 +343,7 @@ rbind(B, D)
 ```
 
 ```
-     [,1] [,2]
+[,1] [,2]
 [1,]    2    1
 [2,]    4    5
 [3,]    3    7
@@ -370,7 +371,7 @@ x[, 4]  # 4th column of matrix
 ```
 
 ```r
-x[3, ]  # 3rd row of matrix 
+x[3, ]  # 3rd row of matrix
 ```
 
 ```
@@ -382,7 +383,7 @@ x[2:4, 1:3]  # rows 2,3,4 of columns 1,2,3
 ```
 
 ```
-     [,1] [,2] [,3]
+[,1] [,2] [,3]
 [1,]    2    7   12
 [2,]    3    8   13
 [3,]    4    9   14
@@ -395,7 +396,7 @@ t(x)
 ```
 
 ```
-     [,1] [,2] [,3] [,4] [,5]
+[,1] [,2] [,3] [,4] [,5]
 [1,]    1    2    3    4    5
 [2,]    6    7    8    9   10
 [3,]   11   12   13   14   15
@@ -415,7 +416,7 @@ mydata
 ```
 
 ```
-  d     e     f
+d     e     f
 1 1   red  TRUE
 2 2 white  TRUE
 3 3   red  TRUE
@@ -448,7 +449,7 @@ mydata[, 1:2]  # columns 1,2 of data frame
 ```
 
 ```
-  ID Color
+ID Color
 1  1   red
 2  2 white
 3  3   red
@@ -460,7 +461,7 @@ mydata[c("ID", "Color")]  # columns ID and Color from data frame
 ```
 
 ```
-  ID Color
+ID Color
 1  1   red
 2  2 white
 3  3   red
@@ -480,7 +481,7 @@ subset(mydata, Passed == "TRUE")
 ```
 
 ```
-  ID Color Passed
+ID Color Passed
 1  1   red   TRUE
 2  2 white   TRUE
 3  3   red   TRUE
@@ -491,7 +492,7 @@ subset(mydata, ID > 3)
 ```
 
 ```
-  ID Color Passed
+ID Color Passed
 4  4  <NA>  FALSE
 ```
 
@@ -500,7 +501,7 @@ subset(mydata, ID < 3, select = c(ID, Passed))
 ```
 
 ```
-  ID Passed
+ID Passed
 1  1   TRUE
 2  2   TRUE
 ```
@@ -510,7 +511,7 @@ subset(mydata, ID < 3, select = -c(Color, Passed))
 ```
 
 ```
-  ID
+ID
 1  1
 2  2
 ```
@@ -520,7 +521,7 @@ subset(mydata, Color == "red" & Passed == "TRUE")
 ```
 
 ```
-  ID Color Passed
+ID Color Passed
 1  1   red   TRUE
 3  3   red   TRUE
 ```
@@ -530,7 +531,7 @@ mydata[mydata$ID %in% c(1, 3), ]
 ```
 
 ```
-  ID Color Passed
+ID Color Passed
 1  1   red   TRUE
 3  3   red   TRUE
 ```
@@ -574,7 +575,7 @@ $mynumbers
 [1]  1.0  2.0  5.3  6.0 -2.0  4.0
 
 $mymatrix
-     [,1] [,2] [,3] [,4]
+[,1] [,2] [,3] [,4]
 [1,]    1    6   11   16
 [2,]    2    7   12   17
 [3,]    3    8   13   18
@@ -600,7 +601,7 @@ $mynumbers
 [1]  1.0  2.0  5.3  6.0 -2.0  4.0
 
 $mymatrix
-     [,1] [,2] [,3] [,4]
+[,1] [,2] [,3] [,4]
 [1,]    1    6   11   16
 [2,]    2    7   12   17
 [3,]    3    8   13   18
@@ -616,7 +617,7 @@ v[[2]]  # 2nd component of the list
 ```
 
 ```
-     [,1] [,2] [,3] [,4]
+[,1] [,2] [,3] [,4]
 [1,]    1    6   11   16
 [2,]    2    7   12   17
 [3,]    3    8   13   18
@@ -646,8 +647,8 @@ summary(gender)
 ```
 
 ```
-female   male 
-    30     20 
+female   male
+30     20
 ```
 
 ```r
@@ -660,6 +661,6 @@ rating <- ordered(rating)
 ```
 
 
-**References**    
-[Quick-R: Data type](http://www.statmethods.net/input/datatypes.html)    
+**References**
+[Quick-R: Data type](http://www.statmethods.net/input/datatypes.html)
 [R Tutorial: Data Frame](http://www.r-tutor.com/r-introduction/data-frame)

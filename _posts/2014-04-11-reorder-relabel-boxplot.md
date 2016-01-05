@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Plot]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### boxplot
 
@@ -14,7 +15,7 @@ head(airquality)
 ```
 
 ```
-  Ozone Solar.R Wind Temp Month Day
+Ozone Solar.R Wind Temp Month Day
 1    41     190  7.4   67     5   1
 2    36     118  8.0   72     5   2
 3    12     149 12.6   74     5   3
@@ -27,7 +28,7 @@ head(airquality)
 boxplot(Ozone ~ Month, data = airquality, xlab = "Month", ylab = "Ozone")
 ```
 
-![plot of chunk reoder-relabel-1](/figure/reoder-relabel-1.png) 
+![plot of chunk reoder-relabel-1](/figure/reoder-relabel-1.png)
 
 
 ### Sort the months by their median
@@ -45,7 +46,7 @@ plotOrder = as.integer(names(st))
 boxplot(Ozone ~ Month, at = plotOrder, xlab = "Month", ylab = "Ozone")
 ```
 
-![plot of chunk reoder-relabel-2](/figure/reoder-relabel-2.png) 
+![plot of chunk reoder-relabel-2](/figure/reoder-relabel-2.png)
 
 
 ### Alter the x-axis tick labels (include the median of Ozone in parentheses)
@@ -54,11 +55,11 @@ boxplot(Ozone ~ Month, at = plotOrder, xlab = "Month", ylab = "Ozone")
 ```r
 mylabels = vector()
 for (i in 1:length(temp)) {
-    mylabels[i] = paste(temp[i], "(", mymedians[temp[i]], ")", sep = "")
+mylabels[i] = paste(temp[i], "(", mymedians[temp[i]], ")", sep = "")
 }
 boxplot(Ozone ~ Month, at = plotOrder, xaxt = "n")
 axis(side = 1, label = mylabels, at = 1:length(mylabels))
 ```
 
-![plot of chunk reoder-relabel-3](/figure/reoder-relabel-3.png) 
+![plot of chunk reoder-relabel-3](/figure/reoder-relabel-3.png)
 

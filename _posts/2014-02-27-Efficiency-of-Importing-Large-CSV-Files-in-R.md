@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R, data.table]
 image: /figure
 ---
+{% include JB/setup %}
 
 #### {data.table} outperforms other methods
 
@@ -17,7 +18,7 @@ fread("data.csv", header = T, sep = ",")
 
 ##### Data used
 
-size of csv file: 689.4MB (7,009,728 rows * 29 columns)    
+size of csv file: 689.4MB (7,009,728 rows * 29 columns)
 
 ##### Methods tested
 
@@ -27,5 +28,5 @@ size of csv file: 689.4MB (7,009,728 rows * 29 columns)
 * read.csv.ffdf {ff}
 * read.csv.sql {sqldf}
 
-**Details** are available at the [original post](http://statcompute.wordpress.com/2014/02/11/efficiency-of-importing-large-csv-files-in-r/)    
+**Details** are available at the [original post](http://statcompute.wordpress.com/2014/02/11/efficiency-of-importing-large-csv-files-in-r/)
 

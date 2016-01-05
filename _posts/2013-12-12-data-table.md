@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R, data.table]
 image: /figure
 ---
+{% include JB/setup %}
 
 
 ```r
@@ -23,16 +24,16 @@ dt
 ```
 
 ```
-    x       y
- 1: b -0.5660
- 2: c -1.8787
- 3: a -1.2668
- 4: d -0.9677
- 5: d -1.1210
- 6: a  1.3255
- 7: c  0.1340
- 8: a  0.9387
- 9: b  0.1725
+x       y
+1: b -0.5660
+2: c -1.8787
+3: a -1.2668
+4: d -0.9677
+5: d -1.1210
+6: a  1.3255
+7: c  0.1340
+8: a  0.9387
+9: b  0.1725
 10: c  0.9577
 ```
 
@@ -41,7 +42,7 @@ dt[2]  # 2nd row
 ```
 
 ```
-   x      y
+x      y
 1: c -1.879
 ```
 
@@ -50,8 +51,8 @@ dt[, y]  # y column (as vector)
 ```
 
 ```
- [1] -0.5660 -1.8787 -1.2668 -0.9677 -1.1210  1.3255  0.1340  0.9387
- [9]  0.1725  0.9577
+[1] -0.5660 -1.8787 -1.2668 -0.9677 -1.1210  1.3255  0.1340  0.9387
+[9]  0.1725  0.9577
 ```
 
 ```r
@@ -59,16 +60,16 @@ dt[, list(y)]  # y column (as data.table)
 ```
 
 ```
-          y
- 1: -0.5660
- 2: -1.8787
- 3: -1.2668
- 4: -0.9677
- 5: -1.1210
- 6:  1.3255
- 7:  0.1340
- 8:  0.9387
- 9:  0.1725
+y
+1: -0.5660
+2: -1.8787
+3: -1.2668
+4: -0.9677
+5: -1.1210
+6:  1.3255
+7:  0.1340
+8:  0.9387
+9:  0.1725
 10:  0.9577
 ```
 
@@ -81,7 +82,7 @@ head(dt.cars)
 ```
 
 ```
-   speed dist
+speed dist
 1:     4    2
 2:     4   10
 3:     7    4
@@ -99,16 +100,16 @@ tables()  # The result of tables() is itself a data.table
 ```
 
 ```
-     NAME    NROW MB COLS       KEY
-[1,] dt        10 1  x,y           
-[2,] dt.cars   50 1  speed,dist    
+NAME    NROW MB COLS       KEY
+[1,] dt        10 1  x,y
+[2,] dt.cars   50 1  speed,dist
 Total: 2MB
 ```
 
 
 ### Keys
 
-A key consists of one or more columns of rownames, which may be integer, factor, character or some other class, not simply character. The rows are sorted by the key. A data.table can have at most one key, but duplicate key values are allowed.    
+A key consists of one or more columns of rownames, which may be integer, factor, character or some other class, not simply character. The rows are sorted by the key. A data.table can have at most one key, but duplicate key values are allowed.
 
 
 ```r
@@ -117,7 +118,7 @@ dt[2, ]  # the second row of df
 ```
 
 ```
-   x      y
+x      y
 1: c -1.879
 ```
 
@@ -126,7 +127,7 @@ dt[dt$x == "a", ]  # all rows with first column is 'a'
 ```
 
 ```
-   x       y
+x       y
 1: a -1.2668
 2: a  1.3255
 3: a  0.9387
@@ -140,7 +141,7 @@ dt["a", ]  # all rows with first column is 'a', The comma is optional.
 ```
 
 ```
-   x       y
+x       y
 1: a -1.2668
 2: a  1.3255
 3: a  0.9387
@@ -151,7 +152,7 @@ dt["a"]
 ```
 
 ```
-   x       y
+x       y
 1: a -1.2668
 2: a  1.3255
 3: a  0.9387
@@ -165,7 +166,7 @@ dt["a", mult = "first"]
 ```
 
 ```
-   x      y
+x      y
 1: a -1.267
 ```
 
@@ -174,25 +175,25 @@ dt["a", mult = "last"]
 ```
 
 ```
-   x      y
+x      y
 1: a 0.9387
 ```
 
 
 ### binary search (faster)
 
-The vector scan is linear, but the binary search is O(log n).     
+The vector scan is linear, but the binary search is O(log n).
 
 
 ```r
-df2 <- data.frame(x = sample(LETTERS, 1e+07, replace = T), y = sample(letters, 
-    1e+07, replace = T), z = rnorm(1e+07))
+df2 <- data.frame(x = sample(LETTERS, 1e+07, replace = T), y = sample(letters,
+1e+07, replace = T), z = rnorm(1e+07))
 system.time(ans1 <- df2[df2$x == "R" & df2$y == "h", ])  # 'vector scan'
 ```
 
 ```
-   user  system elapsed 
-   5.81    0.28    6.11 
+user  system elapsed
+5.81    0.28    6.11
 ```
 
 ```r
@@ -203,8 +204,8 @@ system.time(ans2 <- dt2[J("R", "h")])  # binary search, faster
 ```
 
 ```
-   user  system elapsed 
-   0.02    0.00    0.01 
+user  system elapsed
+0.02    0.00    0.01
 ```
 
 ```r
@@ -225,8 +226,8 @@ system.time(sum1 <- dt2[, sum(z), by = x])
 ```
 
 ```
-   user  system elapsed 
-   0.21    0.05    0.25 
+user  system elapsed
+0.21    0.05    0.25
 ```
 
 ```r
@@ -234,7 +235,7 @@ head(sum1)
 ```
 
 ```
-   x       V1
+x       V1
 1: A  -211.43
 2: B   -60.01
 3: C  -723.30
@@ -249,7 +250,7 @@ dt2[, sum(z), by = list(x == "A")]  # by expression
 ```
 
 ```
-       x      V1
+x      V1
 1:  TRUE  -211.4
 2: FALSE -6875.4
 ```
@@ -260,8 +261,8 @@ system.time(sum2 <- dt2[, sum(z), by = "x,y"])
 ```
 
 ```
-   user  system elapsed 
-   0.14    0.04    0.19 
+user  system elapsed
+0.14    0.04    0.19
 ```
 
 ```r
@@ -269,7 +270,7 @@ head(sum2)
 ```
 
 ```
-   x y      V1
+x y      V1
 1: A a 147.617
 2: A b   2.296
 3: A c 203.767
@@ -284,14 +285,14 @@ head(sum2)
 
 ```r
 set.seed(9999)
-dt3 = data.table(x = sample(letters, 10, replace = T), y = sample(1:20, 10, 
-    replace = T), z = sample(1:99, 10, replace = T))
+dt3 = data.table(x = sample(letters, 10, replace = T), y = sample(1:20, 10,
+replace = T), z = sample(1:99, 10, replace = T))
 setkey(dt3, x)
 dt3["o"]  # join to 1st column of key
 ```
 
 ```
-   x  y  z
+x  y  z
 1: o NA NA
 ```
 
@@ -300,7 +301,7 @@ dt3[J("o")]  # same. J() stands for Join, an alias for list()
 ```
 
 ```
-   x  y  z
+x  y  z
 1: o NA NA
 ```
 
@@ -309,16 +310,16 @@ dt3[!"o"]  # all rows other than 'o'
 ```
 
 ```
-    x  y  z
- 1: f 16 55
- 2: f 19 34
- 3: r  1 98
- 4: r  9 34
- 5: t  3 35
- 6: u  4 85
- 7: v 19 39
- 8: v  2  7
- 9: w 17 33
+x  y  z
+1: f 16 55
+2: f 19 34
+3: r  1 98
+4: r  9 34
+5: t  3 35
+6: u  4 85
+7: v 19 39
+8: v  2  7
+9: w 17 33
 10: z 17 45
 ```
 
@@ -327,7 +328,7 @@ dt3[!2:4]  # all rows other than 2:4
 ```
 
 ```
-   x  y  z
+x  y  z
 1: f 16 55
 2: t  3 35
 3: u  4 85
@@ -344,7 +345,7 @@ dt3[J("o", 3)]  # join to 2 columns
 ```
 
 ```
-   x y  z
+x y  z
 1: o 3 NA
 ```
 
@@ -353,7 +354,7 @@ dt3[J("o", 3:6)]  # join 4 rows (1 missing)
 ```
 
 ```
-   x y  z
+x y  z
 1: o 3 NA
 2: o 4 NA
 3: o 5 NA
@@ -365,16 +366,16 @@ dt3[!J("o", 3)]  # multiple join
 ```
 
 ```
-    x  y  z
- 1: f 16 55
- 2: f 19 34
- 3: r  1 98
- 4: r  9 34
- 5: t  3 35
- 6: u  4 85
- 7: v  2  7
- 8: v 19 39
- 9: w 17 33
+x  y  z
+1: f 16 55
+2: f 19 34
+3: r  1 98
+4: r  9 34
+5: t  3 35
+6: u  4 85
+7: v  2  7
+8: v 19 39
+9: w 17 33
 10: z 17 45
 ```
 
@@ -383,7 +384,7 @@ dt3[, sum(z), by = x][order(-V1)]  # ordering results
 ```
 
 ```
-   x  V1
+x  V1
 1: r 132
 2: f  89
 3: u  85

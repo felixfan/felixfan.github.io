@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Plot,ggplot2]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Build a plot layer by layer
 
@@ -24,7 +25,7 @@ p <- p + layer(geom = "point")
 p
 ```
 
-![plot of chunk ggplot-part3-1](/figure/ggplot-part3-11.png) 
+![plot of chunk ggplot-part3-1](/figure/ggplot-part3-11.png)
 
 ```r
 
@@ -32,12 +33,12 @@ p
 # coloured “steelblue” with a bin width of 2 histogram is a combination of
 # bars and binning
 p <- ggplot(diamonds, aes(x = carat))
-p <- p + layer(geom = "bar", geom_params = list(fill = "steelblue"), stat = "bin", 
-    stat_params = list(binwidth = 2))
+p <- p + layer(geom = "bar", geom_params = list(fill = "steelblue"), stat = "bin",
+stat_params = list(binwidth = 2))
 p
 ```
 
-![plot of chunk ggplot-part3-1](/figure/ggplot-part3-12.png) 
+![plot of chunk ggplot-part3-1](/figure/ggplot-part3-12.png)
 
 
 
@@ -71,9 +72,9 @@ summary(p)
 
 ```
 data: name, genus, vore, order, conservation, sleep_total,
-  sleep_rem, sleep_cycle, awake, brainwt, bodywt [20x11]
+sleep_rem, sleep_cycle, awake, brainwt, bodywt [20x11]
 mapping:  x = sleep_rem/sleep_total, y = awake
-faceting: facet_null() 
+faceting: facet_null()
 ```
 
 ```r
@@ -83,12 +84,12 @@ summary(p)
 
 ```
 data: name, genus, vore, order, conservation, sleep_total,
-  sleep_rem, sleep_cycle, awake, brainwt, bodywt [20x11]
+sleep_rem, sleep_cycle, awake, brainwt, bodywt [20x11]
 mapping:  x = sleep_rem/sleep_total, y = awake
-faceting: facet_null() 
+faceting: facet_null()
 -----------------------------------
-geom_point: na.rm = FALSE 
-stat_identity:  
+geom_point: na.rm = FALSE
+stat_identity:
 position_identity: (width = NULL, height = NULL)
 ```
 
@@ -97,25 +98,25 @@ position_identity: (width = NULL, height = NULL)
 # a set of plots can be initialised using different data then enhanced with
 # the same layer
 
-bestfit <- geom_smooth(method = "lm", se = F, colour = "steelblue", alpha = 0.5, 
-    size = 2)
+bestfit <- geom_smooth(method = "lm", se = F, colour = "steelblue", alpha = 0.5,
+size = 2)
 
 qplot(sleep_rem, sleep_total, data = msleep) + bestfit
 ```
 
-![plot of chunk ggplot-part3-2](/figure/ggplot-part3-21.png) 
+![plot of chunk ggplot-part3-2](/figure/ggplot-part3-21.png)
 
 ```r
 qplot(awake, brainwt, data = msleep, log = "y") + bestfit
 ```
 
-![plot of chunk ggplot-part3-2](/figure/ggplot-part3-22.png) 
+![plot of chunk ggplot-part3-2](/figure/ggplot-part3-22.png)
 
 ```r
 qplot(bodywt, brainwt, data = msleep, log = "xy") + bestfit
 ```
 
-![plot of chunk ggplot-part3-2](/figure/ggplot-part3-23.png) 
+![plot of chunk ggplot-part3-2](/figure/ggplot-part3-23.png)
 
 
 #### Data
@@ -127,14 +128,14 @@ p <- ggplot(mtcars, aes(mpg, wt, colour = cyl)) + geom_point()
 p
 ```
 
-![plot of chunk ggplot-part3-3](/figure/ggplot-part3-31.png) 
+![plot of chunk ggplot-part3-3](/figure/ggplot-part3-31.png)
 
 ```r
 mtcars <- transform(mtcars, mpg = mpg^2)
 p %+% mtcars
 ```
 
-![plot of chunk ggplot-part3-3](/figure/ggplot-part3-32.png) 
+![plot of chunk ggplot-part3-3](/figure/ggplot-part3-32.png)
 
 
 #### Aesthetic mappings
@@ -149,7 +150,7 @@ p <- ggplot(mtcars, aes(x = mpg, y = wt))
 p + geom_point()
 ```
 
-![plot of chunk ggplot-part3-4](/figure/ggplot-part3-41.png) 
+![plot of chunk ggplot-part3-4](/figure/ggplot-part3-41.png)
 
 ```r
 
@@ -157,14 +158,14 @@ p + geom_point()
 p + geom_point(aes(colour = factor(cyl)))
 ```
 
-![plot of chunk ggplot-part3-4](/figure/ggplot-part3-42.png) 
+![plot of chunk ggplot-part3-4](/figure/ggplot-part3-42.png)
 
 ```r
 # overriding y-position (now y is 'disp',although the y lab is still 'wt')
 p + geom_point(aes(y = disp))
 ```
 
-![plot of chunk ggplot-part3-4](/figure/ggplot-part3-43.png) 
+![plot of chunk ggplot-part3-4](/figure/ggplot-part3-43.png)
 
 
 ##### Setting vs. mapping
@@ -174,10 +175,10 @@ p + geom_point(aes(y = disp))
 # The difference between setting colour to 'darkblue' and mapping colour to
 # 'darkblue'.
 p <- ggplot(mtcars, aes(mpg, wt))
-p + geom_point(colour = "darkblue")  # setting 
+p + geom_point(colour = "darkblue")  # setting
 ```
 
-![plot of chunk ggplot-part3-5](/figure/ggplot-part3-51.png) 
+![plot of chunk ggplot-part3-5](/figure/ggplot-part3-51.png)
 
 ```r
 # This sets the point colour to be dark blue instead of black. This is quite
@@ -185,7 +186,7 @@ p + geom_point(colour = "darkblue")  # setting
 p + geom_point(aes(colour = "darkblue"))  # mapping
 ```
 
-![plot of chunk ggplot-part3-5](/figure/ggplot-part3-52.png) 
+![plot of chunk ggplot-part3-5](/figure/ggplot-part3-52.png)
 
 
 
@@ -207,7 +208,7 @@ p <- ggplot(Oxboys, aes(age, height, group = Subject)) + geom_line()
 p
 ```
 
-![plot of chunk ggplot-part3-6](/figure/ggplot-part3-6.png) 
+![plot of chunk ggplot-part3-6](/figure/ggplot-part3-6.png)
 
 
 
@@ -224,7 +225,7 @@ qplot(age, height, data = Oxboys, group = Subject, geom = "line")
 ggplot(Oxboys, aes(age, height, group = 1)) + geom_line()
 ```
 
-![plot of chunk ggplot-part3-7](/figure/ggplot-part3-7.png) 
+![plot of chunk ggplot-part3-7](/figure/ggplot-part3-7.png)
 
 
 
@@ -242,14 +243,14 @@ qplot(age, height, data = Oxboys, geom = "line")
 p + geom_smooth(aes(group = Subject), method = "lm", se = F)
 ```
 
-![plot of chunk ggplot-part3-8](/figure/ggplot-part3-8.png) 
+![plot of chunk ggplot-part3-8](/figure/ggplot-part3-8.png)
 
 
 
 ```r
 # or
-qplot(age, height, data = Oxboys, group = Subject, geom = "line") + geom_smooth(method = "lm", 
-    se = F)
+qplot(age, height, data = Oxboys, group = Subject, geom = "line") + geom_smooth(method = "lm",
+se = F)
 ```
 
 
@@ -260,13 +261,13 @@ qplot(age, height, data = Oxboys, group = Subject, geom = "line") + geom_smooth(
 p + geom_smooth(aes(group = 1), method = "lm", size = 2, se = F)
 ```
 
-![plot of chunk ggplot-part3-9](/figure/ggplot-part3-9.png) 
+![plot of chunk ggplot-part3-9](/figure/ggplot-part3-9.png)
 
 
 
 ```r
-qplot(age, height, data = Oxboys, group = Subject, geom = "line") + geom_smooth(aes(group = 1), 
-    method = "lm", size = 2, se = F)
+qplot(age, height, data = Oxboys, group = Subject, geom = "line") + geom_smooth(aes(group = 1),
+method = "lm", size = 2, se = F)
 ```
 
 ### Further reading

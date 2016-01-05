@@ -5,12 +5,13 @@ categories: [Bioinformatics]
 tags: [Bioinformatics,Linux]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### 1 awk
 
 #### 1.1 Sum/average column 1 of file.txt
 
-```   
+```
 awk '{sum+=$1} END {print sum}' file.txt
 awk '{sum+=$1} END {print sum/NR}' file.txt
 ```
@@ -80,10 +81,10 @@ sed '/^$/d' file.txt
 sed 's/foo/bar/g' file.txt
 
 # only replace the first instance in each line
-sed 's/foo/bar/' file.txt     
+sed 's/foo/bar/' file.txt
 ```
 
-#### 2.4 Extract every 4th line starting at the second line 
+#### 2.4 Extract every 4th line starting at the second line
 
 ```
 ## line 2, 6, 10, ...
@@ -95,7 +96,7 @@ sed -n '2~4p' file.txt
 #### 3.1 Count the number of unique lines in file.txt
 
 ```
-sort file.txt | uniq | wc -l   
+sort file.txt | uniq | wc -l
 ```
 
 #### 3.2 Find number of lines shared by 2 files:
@@ -116,7 +117,7 @@ sort file1 file2 | uniq
 
 #### 3.4 Sort file by column
 
-file: 1.txt   
+file: 1.txt
 
 ```
 1       2       3
@@ -127,7 +128,7 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 1.txt**   # sort by first column     
+**sort -k1,1 1.txt**   # sort by first column
 
 ```
 1       1       1
@@ -138,7 +139,7 @@ file: 1.txt
 3       4       1
 ```
 
-**sort -k1,1 -n 1.txt**  # sort by first column, numeric sort    
+**sort -k1,1 -n 1.txt**  # sort by first column, numeric sort
 
 ```
 1       1       1
@@ -149,7 +150,7 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 -k3,3 -n 1.txt**  # then use the third column as a tie breaker     
+**sort -k1,1 -k3,3 -n 1.txt**  # then use the third column as a tie breaker
 
 ```
 1       1       1
@@ -160,7 +161,7 @@ file: 1.txt
 10      2       9
 ```
 
-**sort -k1,1 -k3,3 -n -r 1.txt** # reverse the order   
+**sort -k1,1 -k3,3 -n -r 1.txt** # reverse the order
 
 ```
 10      2       9
@@ -202,7 +203,7 @@ split -l5000 test.txt             # split files are created with 5000 lines
 #### 5.4 Do not generate empty output files with -e option
 
 ```
-split -n20 -e test.txt            
+split -n20 -e test.txt
 ```
 
 ### 6 join
@@ -221,7 +222,7 @@ join -i FILE1 FILE2
 
 #### 6.3  Also print unpairable lines from file FILENUM using -a option
 
-where FILENUM is 1 or 2, corresponding to FILE1 or FILE2    
+where FILENUM is 1 or 2, corresponding to FILE1 or FILE2
 
 ```
 join -a1 FILE1 FILE2           ## also print unpairable lines from FILE1
@@ -236,15 +237,15 @@ join -v FILE1 FILE2           ## only print unpaired lines
 #### 6.5 Join based on different columns from both biles using -1 and -2 option
 
 ```
-join -1 2 -2 1 FILE1 FILE2  
-##join based on the second column of FILE1 and the first column of FILE2         
+join -1 2 -2 1 FILE1 FILE2
+##join based on the second column of FILE1 and the first column of FILE2
 ```
 
 ### 7 paste
 
-paste is used to create columns of data with a user-specified delimiter.      
+paste is used to create columns of data with a user-specified delimiter.
 
-a.txt     
+a.txt
 
 ```
 a
@@ -252,7 +253,7 @@ b
 c
 ```
 
-b.txt     
+b.txt
 
 ```
 1
@@ -260,7 +261,7 @@ b.txt
 3
 ```
 
-**paste a.txt b.txt**     
+**paste a.txt b.txt**
 
 ```
 a       1
@@ -268,7 +269,7 @@ b       2
 c       3
 ```
 
-**paste b.txt a.txt**     
+**paste b.txt a.txt**
 
 ```
 1       a
@@ -276,7 +277,7 @@ c       3
 3       c
 ```
 
-**paste -d ',' a.txt b.txt**     
+**paste -d ',' a.txt b.txt**
 
 ```
 a,1
@@ -286,7 +287,7 @@ c,3
 
 ### 8 cat
 
-**cat a.txt b.txt**     
+**cat a.txt b.txt**
 
 ```
 a
@@ -297,7 +298,7 @@ c
 3
 ```
 
-**cat b.txt a.txt**      
+**cat b.txt a.txt**
 
 ```
 1
@@ -313,16 +314,16 @@ c
 ```
 if [expression]
 then
-        code if 'expression' is true.
+code if 'expression' is true.
 fi
 ```
 
 ```
 if [expression]
 then
-        code if 'expression' is true.
+code if 'expression' is true.
 else
-       code if 'expression' is false.   
+code if 'expression' is false.
 fi
 ```
 
@@ -330,9 +331,9 @@ fi
 x=1
 if [ $x -le 5 ] # a space after "[" and before "]", respectively
 then
-        echo "x is less or equal to 5"
+echo "x is less or equal to 5"
 else
-        echo "x is larger than 5"
+echo "x is larger than 5"
 fi
 ```
 
@@ -341,21 +342,21 @@ fi
 ```
 for i in {1..22} # bash version 3.0+
 do
-   echo "chromosome $i"
+echo "chromosome $i"
 done
 ```
 
 ```
 for i in {1..10..2}      #{START..END..INCREMENT} # bash v4.0+
 do
-   echo "chromosome $i"
+echo "chromosome $i"
 done
 ```
 
 ```
 for((c=1; c<=5; c++ )) # you need (()) but not ()
 do
-   echo "Welcome $c times"
+echo "Welcome $c times"
 done
 ```
 
@@ -363,8 +364,8 @@ done
 x=1
 while [ $x -le 5 ] # a space after "[" and before "]", respectively
 do
-  echo "Welcome $x times"
-  x=$(( $x + 1 ))
+echo "Welcome $x times"
+x=$(( $x + 1 ))
 done
 ```
 

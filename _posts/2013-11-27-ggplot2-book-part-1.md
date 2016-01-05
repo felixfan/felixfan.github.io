@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Plot,ggplot2]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Terminology
 
@@ -15,9 +16,9 @@ image: /figure
 
 * The **scale**s map values in the data space to values in an aesthetic space, whether it be colour, or size, or shape.
 
-* A coordinate system, **coord** for short, describes how data coordinates are mapped to the plane of the graphic. It also provides axes and gridlines to make it possible to read the graph. 
+* A coordinate system, **coord** for short, describes how data coordinates are mapped to the plane of the graphic. It also provides axes and gridlines to make it possible to read the graph.
 
-* A **facet**ing specification describes how to break up the data into subsets and how to display those subsets as small multiples. 
+* A **facet**ing specification describes how to break up the data into subsets and how to display those subsets as small multiples.
 
 ### Getting started with qplot
 
@@ -46,7 +47,7 @@ dsmall <- diamonds[sample(nrow(diamonds), 1000), ]
 qplot(carat, price, data = diamonds)
 ```
 
-![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-11.png) 
+![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-11.png)
 
 ```r
 
@@ -55,7 +56,7 @@ qplot(carat, price, data = diamonds)
 qplot(log(carat), log(price), data = diamonds)
 ```
 
-![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-12.png) 
+![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-12.png)
 
 ```r
 
@@ -63,7 +64,7 @@ qplot(log(carat), log(price), data = diamonds)
 qplot(carat, x * y * z, data = diamonds)
 ```
 
-![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-13.png) 
+![plot of chunk ggplot2-part1-1](/figure/ggplot2-part1-13.png)
 
 
 #### Colour, size, shape and other aesthetic attributes
@@ -74,7 +75,7 @@ qplot(carat, x * y * z, data = diamonds)
 qplot(carat, price, data = dsmall, colour = color)
 ```
 
-![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-21.png) 
+![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-21.png)
 
 ```r
 
@@ -82,7 +83,7 @@ qplot(carat, price, data = dsmall, colour = color)
 qplot(carat, price, data = dsmall, shape = cut)
 ```
 
-![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-22.png) 
+![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-22.png)
 
 ```r
 
@@ -92,7 +93,7 @@ qplot(carat, price, data = dsmall, shape = cut)
 qplot(carat, price, data = diamonds, alpha = I(1/10))
 ```
 
-![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-23.png) 
+![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-23.png)
 
 ```r
 
@@ -100,7 +101,7 @@ qplot(carat, price, data = diamonds, alpha = I(1/10))
 qplot(carat, price, data = diamonds, alpha = I(1/100))
 ```
 
-![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-24.png) 
+![plot of chunk ggplot2-part1-2](/figure/ggplot2-part1-24.png)
 
 
 #### Plot geoms
@@ -121,11 +122,11 @@ library(splines)
 library(mgcv)
 # Smooth curves add to scatterplots The geoms will be overlaid in the order
 # in which they appear.
-qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam", 
-    formula = y ~ s(x, bs = "cs"))
+qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam",
+formula = y ~ s(x, bs = "cs"))
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-31.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-31.png)
 
 ```r
 
@@ -135,13 +136,13 @@ qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam",
 qplot(carat, price, data = dsmall, geom = c("point", "smooth"), span = 0.2)
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-32.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-32.png)
 
 ```r
 qplot(carat, price, data = dsmall, geom = c("point", "smooth"), span = 1)
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-33.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-33.png)
 
 ```r
 
@@ -149,19 +150,19 @@ qplot(carat, price, data = dsmall, geom = c("point", "smooth"), span = 1)
 
 # The effect of the formula parameter, using a generalised additive model as
 # a smoother.
-qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam", 
-    formula = y ~ s(x))
+qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam",
+formula = y ~ s(x))
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-34.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-34.png)
 
 ```r
 # default when there are more than 1,000 points
-qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam", 
-    formula = y ~ s(x, bs = "cs"))
+qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam",
+formula = y ~ s(x, bs = "cs"))
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-35.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-35.png)
 
 ```r
 
@@ -169,15 +170,15 @@ qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "gam",
 qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "lm")
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-36.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-36.png)
 
 ```r
 # the default
-qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "lm", 
-    formula = y ~ ns(x, 5))
+qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "lm",
+formula = y ~ ns(x, 5))
 ```
 
-![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-37.png) 
+![plot of chunk ggplot2-part1-3](/figure/ggplot2-part1-37.png)
 
 
 ##### Boxplots and jittered points
@@ -190,13 +191,13 @@ qplot(carat, price, data = dsmall, geom = c("point", "smooth"), method = "lm",
 qplot(color, price/carat, data = diamonds, geom = "jitter")
 ```
 
-![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-41.png) 
+![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-41.png)
 
 ```r
 qplot(color, price/carat, data = diamonds, geom = "boxplot")
 ```
 
-![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-42.png) 
+![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-42.png)
 
 ```r
 
@@ -206,19 +207,19 @@ qplot(color, price/carat, data = diamonds, geom = "boxplot")
 qplot(color, price/carat, data = diamonds, geom = "jitter", alpha = I(1/5))
 ```
 
-![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-43.png) 
+![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-43.png)
 
 ```r
 qplot(color, price/carat, data = diamonds, geom = "jitter", alpha = I(1/50))
 ```
 
-![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-44.png) 
+![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-44.png)
 
 ```r
 qplot(color, price/carat, data = diamonds, geom = "jitter", alpha = I(1/200))
 ```
 
-![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-45.png) 
+![plot of chunk ggplot2-part1-4](/figure/ggplot2-part1-45.png)
 
 
 ##### Histogram and density plots
@@ -229,13 +230,13 @@ qplot(color, price/carat, data = diamonds, geom = "jitter", alpha = I(1/200))
 qplot(carat, data = diamonds, geom = "histogram")
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-51.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-51.png)
 
 ```r
 qplot(carat, data = diamonds, geom = "density")
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-52.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-52.png)
 
 ```r
 
@@ -247,25 +248,25 @@ qplot(carat, data = diamonds, geom = "density")
 # Varying the bin width on a histogram of carat reveals interesting
 # patterns.  Binwidths from left to right: 1, 0.1 and 0.01 carats.  Only
 # diamonds between 0 and 3 carats shown.
-qplot(carat, data = diamonds, geom = "histogram", binwidth = 1, xlim = c(0, 
-    3))
+qplot(carat, data = diamonds, geom = "histogram", binwidth = 1, xlim = c(0,
+3))
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-53.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-53.png)
 
 ```r
-qplot(carat, data = diamonds, geom = "histogram", binwidth = 0.1, xlim = c(0, 
-    3))
+qplot(carat, data = diamonds, geom = "histogram", binwidth = 0.1, xlim = c(0,
+3))
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-54.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-54.png)
 
 ```r
-qplot(carat, data = diamonds, geom = "histogram", binwidth = 0.01, xlim = c(0, 
-    3))
+qplot(carat, data = diamonds, geom = "histogram", binwidth = 0.01, xlim = c(0,
+3))
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-55.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-55.png)
 
 ```r
 
@@ -274,14 +275,14 @@ qplot(carat, data = diamonds, geom = "histogram", binwidth = 0.01, xlim = c(0,
 qplot(carat, data = diamonds, geom = "density", colour = color)
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-56.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-56.png)
 
 ```r
 # histograms are stacked.
 qplot(carat, data = diamonds, geom = "histogram", fill = color)
 ```
 
-![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-57.png) 
+![plot of chunk ggplot2-part1-5](/figure/ggplot2-part1-57.png)
 
 
 ##### Bar charts
@@ -294,13 +295,13 @@ qplot(carat, data = diamonds, geom = "histogram", fill = color)
 qplot(color, data = diamonds, geom = "bar")
 ```
 
-![plot of chunk ggplot2-part1-6](/figure/ggplot2-part1-61.png) 
+![plot of chunk ggplot2-part1-6](/figure/ggplot2-part1-61.png)
 
 ```r
 qplot(color, data = diamonds, geom = "bar", weight = carat) + scale_y_continuous("carat")
 ```
 
-![plot of chunk ggplot2-part1-6](/figure/ggplot2-part1-62.png) 
+![plot of chunk ggplot2-part1-6](/figure/ggplot2-part1-62.png)
 
 
 ##### Time series with line and path plots
@@ -316,14 +317,14 @@ qplot(color, data = diamonds, geom = "bar", weight = carat) + scale_y_continuous
 qplot(date, unemploy/pop, data = economics, geom = "line")
 ```
 
-![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-71.png) 
+![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-71.png)
 
 ```r
 # median number of weeks unemployed.
 qplot(date, uempmed, data = economics, geom = "line")
 ```
 
-![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-72.png) 
+![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-72.png)
 
 ```r
 
@@ -335,15 +336,15 @@ year <- function(x) as.POSIXlt(x)$year + 1900
 qplot(unemploy/pop, uempmed, data = economics, geom = c("point", "path"))
 ```
 
-![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-73.png) 
+![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-73.png)
 
 ```r
 # Pure path plot coloured by year.
-qplot(unemploy/pop, uempmed, data = economics, geom = "path", colour = year(date)) + 
-    scale_size_area()
+qplot(unemploy/pop, uempmed, data = economics, geom = "path", colour = year(date)) +
+scale_size_area()
 ```
 
-![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-74.png) 
+![plot of chunk ggplot2-part1-7](/figure/ggplot2-part1-74.png)
 
 
 ##### Faceting
@@ -361,19 +362,19 @@ qplot(unemploy/pop, uempmed, data = economics, geom = "path", colour = year(date
 
 # Histograms showing the distribution of carat conditional on colour.  Bars
 # show counts
-qplot(carat, data = diamonds, facets = color ~ ., geom = "histogram", binwidth = 0.1, 
-    xlim = c(0, 3))
+qplot(carat, data = diamonds, facets = color ~ ., geom = "histogram", binwidth = 0.1,
+xlim = c(0, 3))
 ```
 
-![plot of chunk ggplot2-part1-8](/figure/ggplot2-part1-81.png) 
+![plot of chunk ggplot2-part1-8](/figure/ggplot2-part1-81.png)
 
 ```r
 # bars show densities (proportions of the whole).
-qplot(carat, ..density.., data = diamonds, facets = color ~ ., geom = "histogram", 
-    binwidth = 0.1, xlim = c(0, 3))
+qplot(carat, ..density.., data = diamonds, facets = color ~ ., geom = "histogram",
+binwidth = 0.1, xlim = c(0, 3))
 ```
 
-![plot of chunk ggplot2-part1-8](/figure/ggplot2-part1-82.png) 
+![plot of chunk ggplot2-part1-8](/figure/ggplot2-part1-82.png)
 
 
 ##### Other options
@@ -381,28 +382,28 @@ qplot(carat, ..density.., data = diamonds, facets = color ~ ., geom = "histogram
 * xlim, ylim: set limits for the x- and y-axes
 * log: a character vector indicating which (if any) axes should be logged. For example, log="x" will log the x-axis, log="xy" will log both.
 * main: main title for the plot, centered in large text at the top of the plot.
-* xlab, ylab: labels for the x- and y-axes. 
+* xlab, ylab: labels for the x- and y-axes.
 
 
 ```r
-qplot(carat, price, data = dsmall, xlab = "Price ($)", ylab = "Weight (carats)", 
-    main = "Price-weight relationship")
+qplot(carat, price, data = dsmall, xlab = "Price ($)", ylab = "Weight (carats)",
+main = "Price-weight relationship")
 ```
 
-![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-91.png) 
+![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-91.png)
 
 ```r
-qplot(carat, price/carat, data = dsmall, ylab = expression(frac(price, carat)), 
-    xlab = "Weight (carats)", main = "Small diamonds", xlim = c(0.2, 1))
+qplot(carat, price/carat, data = dsmall, ylab = expression(frac(price, carat)),
+xlab = "Weight (carats)", main = "Small diamonds", xlim = c(0.2, 1))
 ```
 
-![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-92.png) 
+![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-92.png)
 
 ```r
 qplot(carat, price, data = dsmall, log = "xy")
 ```
 
-![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-93.png) 
+![plot of chunk ggplot2-part1-9](/figure/ggplot2-part1-93.png)
 
 ### Further reading
 * [ggplot2 part 1](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-book-part-1/)

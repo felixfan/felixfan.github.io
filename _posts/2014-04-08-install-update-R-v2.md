@@ -5,14 +5,15 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
 ```
-OS:      WIN7  
-R:       3.03  
+OS:      WIN7
+R:       3.03
 RStudio: 0.98.501
 ```
 
-updated on Tue Apr 08 14:57:09 2014, it was first post [here](http://felixfan.github.io/rstudy/2013/10/04/install-update-R/)   
+updated on Tue Apr 08 14:57:09 2014, it was first post [here](http://felixfan.github.io/rstudy/2013/10/04/install-update-R/)
 
 ### 1. Install R
 
@@ -23,9 +24,9 @@ R is available at http://www.r-project.org/.
 
 ```r
 if (!require(installr)) {
-    # load / install+load installr
-    install.packages("installr")
-    require(installr)
+# load / install+load installr
+install.packages("installr")
+require(installr)
 }
 
 updateR()
@@ -131,6 +132,6 @@ biocLite("BiocUpgrade")
 
 ### 5. Reference
 
-[Installing R packages from CRAN/Bioconductor/Omegahat/Github](https://sagarnikam123.snipt.net/install-packges-in-r-from-crangithub/)      
-[R 3.0.0 is released! (what’s new, and how to upgrade)](http://www.r-statistics.com/2013/04/r-3-0-0-is-released-whats-new-and-how-to-upgrade/)   
-[Automated Re-Install of Packages for R 3.0](http://randyzwitch.com/automated-re-install-of-packages-for-r-3-0/)     
+[Installing R packages from CRAN/Bioconductor/Omegahat/Github](https://sagarnikam123.snipt.net/install-packges-in-r-from-crangithub/)
+[R 3.0.0 is released! (what’s new, and how to upgrade)](http://www.r-statistics.com/2013/04/r-3-0-0-is-released-whats-new-and-how-to-upgrade/)
+[Automated Re-Install of Packages for R 3.0](http://randyzwitch.com/automated-re-install-of-packages-for-r-3-0/)

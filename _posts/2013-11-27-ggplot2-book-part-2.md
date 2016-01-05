@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Plot,ggplot2]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Mastering the grammar
 
@@ -22,7 +23,7 @@ mpg = na.omit(mpg)
 qplot(displ, hwy, data = mpg, colour = factor(cyl))
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-11.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-11.png)
 
 ```r
 
@@ -32,25 +33,25 @@ qplot(displ, hwy, data = mpg, colour = factor(cyl))
 qplot(displ, hwy, data = mpg, colour = factor(cyl), geom = "line") + theme(legend.position = "none")
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-12.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-12.png)
 
 ```r
-qplot(displ, hwy, data = mpg, colour = factor(cyl), geom = "bar", stat = "identity", 
-    position = "identity") + theme(legend.position = "none")
+qplot(displ, hwy, data = mpg, colour = factor(cyl), geom = "bar", stat = "identity",
+position = "identity") + theme(legend.position = "none")
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-13.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-13.png)
 
 ```r
 
 # More complicated plots don't have their own names. This plot overlays a
 # per group regression line on the existing plot.  What would you call this
 # plot?
-qplot(displ, hwy, data = mpg, colour = factor(cyl)) + geom_smooth(data = subset(mpg, 
-    cyl != 5), method = "lm")
+qplot(displ, hwy, data = mpg, colour = factor(cyl)) + geom_smooth(data = subset(mpg,
+cyl != 5), method = "lm")
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-14.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-14.png)
 
 ```r
 
@@ -58,7 +59,7 @@ qplot(displ, hwy, data = mpg, colour = factor(cyl)) + geom_smooth(data = subset(
 qplot(displ, hwy, data = mpg, facets = . ~ year) + geom_smooth()
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-15.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-15.png)
 
 ```r
 
@@ -71,25 +72,25 @@ y <- factor(letters[1:5])
 qplot(x, x, size = x)
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-16.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-16.png)
 
 ```r
 qplot(x, x, 1:10, colour = x)
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-17.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-17.png)
 
 ```r
 qplot(y, y, 1:10, shape = y)
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-18.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-18.png)
 
 ```r
 qplot(y, y, 1:10, colour = y)
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-19.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-19.png)
 
 ```r
 
@@ -103,19 +104,19 @@ p <- qplot(x1, y1, geom = "blank", xlab = NULL, ylab = NULL) + theme_bw()
 p
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-110.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-110.png)
 
 ```r
 p + coord_trans(y = "log10")
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-111.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-111.png)
 
 ```r
 p + coord_polar()
 ```
 
-![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-112.png) 
+![plot of chunk ggplot2-part2-1](/figure/ggplot2-part2-112.png)
 
 ```r
 
@@ -125,12 +126,12 @@ summary(p)
 
 ```
 data: manufacturer, model, displ, year, cyl, trans, drv, cty, hwy,
-  fl, class [234x11]
+fl, class [234x11]
 mapping:  colour = factor(cyl), x = displ, y = hwy
-faceting: facet_null() 
+faceting: facet_null()
 -----------------------------------
-geom_point:  
-stat_identity:  
+geom_point:
+stat_identity:
 position_identity: (width = NULL, height = NULL)
 ```
 

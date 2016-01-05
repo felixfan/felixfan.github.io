@@ -5,10 +5,11 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
 ```
-OS:      WIN7  
-R:       3.02   
+OS:      WIN7
+R:       3.02
 RStudio: 0.98.312
 ```
 
@@ -21,9 +22,9 @@ R is available at http://www.r-project.org/.
 
 ```r
 if (!require(installr)) {
-    # load / install+load installr
-    install.packages("installr")
-    require(installr)
+# load / install+load installr
+install.packages("installr")
+require(installr)
 }
 
 updateR()
@@ -119,7 +120,7 @@ install.packages(package_list)  #Re-install all installed packages
 
 ### 5. Reference
 
-[Installing R packages from CRAN/Bioconductor/Omegahat/Github](https://sagarnikam123.snipt.net/install-packges-in-r-from-crangithub/)      
-[R 3.0.0 is released! (what’s new, and how to upgrade)](http://www.r-statistics.com/2013/04/r-3-0-0-is-released-whats-new-and-how-to-upgrade/)   
-[Automated Re-Install of Packages for R 3.0](http://randyzwitch.com/automated-re-install-of-packages-for-r-3-0/)     
+[Installing R packages from CRAN/Bioconductor/Omegahat/Github](https://sagarnikam123.snipt.net/install-packges-in-r-from-crangithub/)
+[R 3.0.0 is released! (what’s new, and how to upgrade)](http://www.r-statistics.com/2013/04/r-3-0-0-is-released-whats-new-and-how-to-upgrade/)
+[Automated Re-Install of Packages for R 3.0](http://randyzwitch.com/automated-re-install-of-packages-for-r-3-0/)
 

@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Pandoc,LaTeX,MiKTeX,RStudio,kintr]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### 1. R Markdown
 
@@ -18,7 +19,7 @@ image: /figure
 
 [knitr](http://yihui.name/knitr/) can convert R Markdown (.Rmd) files into plain markdown (.md) files. With Rstudio, you only need to click the 'Knit HTML' button.
 
-You can also use the following command:   
+You can also use the following command:
 
 ```
 library(knitr)
@@ -29,11 +30,11 @@ knit("test.Rmd")
 
 #### 4.1 Install Pandoc and MiKTeX
 
-We need to install the following tools first.   
+We need to install the following tools first.
 
-[Pandoc](http://johnmacfarlane.net/pandoc/) can convert files from one markup format into another, see the webpage for more details.    
+[Pandoc](http://johnmacfarlane.net/pandoc/) can convert files from one markup format into another, see the webpage for more details.
 
-[MiKTeX](http://miktex.org/) is an up-to-date implementation of [TeX](http://www.ctan.org/tex/)/[LaTeX](http://www.latex-project.org/) and related programs for Windows.     
+[MiKTeX](http://miktex.org/) is an up-to-date implementation of [TeX](http://www.ctan.org/tex/)/[LaTeX](http://www.latex-project.org/) and related programs for Windows.
 
 #### 4.2 Convert Markdown files into PDF
 
@@ -41,17 +42,17 @@ We need to install the following tools first.
 pandoc -o test.pdf test.md
 ```
 
-Run Pandoc from Rstudio directly:   
+Run Pandoc from Rstudio directly:
 
 ```
 system("pandoc -o test.pdf test.md")
 ```
 
-**Note:** you may need to add the path of 'pandoc' to your Environment Variables. [How?](http://www.computerhope.com/issues/ch000549.htm)   
+**Note:** you may need to add the path of 'pandoc' to your Environment Variables. [How?](http://www.computerhope.com/issues/ch000549.htm)
 
 #### 4.3 When Markdown files include Chinese
 
-Run Pandoc from Rstudio directly:   
+Run Pandoc from Rstudio directly:
 
 ```
 system("pandoc -o test.pdf test.md  --latex-engine=xelatex --template=pm-template-felix.latex")

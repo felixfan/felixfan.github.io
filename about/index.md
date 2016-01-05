@@ -1,17 +1,25 @@
 ---
-title: About Me
-layout: default
+title: 关于
+layout: page
+comments: no
 ---
 
-I am a postdoctoral fellow in The University of Hong Kong.    
+{{ site.about }}
 
-I am working in the field of human complex disease research, with specialization in bioinformatics and statistical genetics.
-  
-[CV](http://felixfan.github.io/cv/)    
+----
 
-**contact**     
+###联系方式：
 
-* Email: nolanfyh@gmail.com     
-* Tel:   +852 5399 2796      
+{% if site.qq %}
+ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
+{% endif %}
+网站：[{{ site.name }}]({{ site.url }})
 
-![fig](https://dl.dropboxusercontent.com/u/8272421/about.png)     
+邮箱：[{{ site.email }}](mailto:{{ site.email }})
+
+GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+
+----
+
+
+[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/f78fbcd2/1.png)](http://weibo.com/u/{{ site.weibo }})

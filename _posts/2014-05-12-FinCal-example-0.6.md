@@ -4,18 +4,20 @@ layout: post
 categories: [Finance]
 tags: [R, Finance]
 image: /figure
---- 
- 
-Updated on Tue Dec 29 10:47:56 2015   
+---
+{% include JB/setup %}
+
+
+Updated on Tue Dec 29 10:47:56 2015
 
 FinCal -- Time Value of Money, time series analysis and Computational Finance
---------------------------------------------------------------------------------    
+--------------------------------------------------------------------------------
 FinCal is available on [CRAN] (http://cran.r-project.org/web/packages/FinCal/) and [GitHub](http://felixfan.github.io/FinCal/)
 
 ```
 install.packages("FinCal",dependencies=TRUE) # from CRAN
 ```
-or   
+or
 
 ```
 library("devtools")
@@ -33,9 +35,10 @@ Note: for all examples, cash inflows are positive and outflows are negative.
 
 **Examples for version 0.1 -0.6**
 
-Example 1 Computing effective annual rate (EAR)    
+Example 1 Computing effective annual rate (EAR)
 -------------------------------------------------------
-Using a stated rate of 4.25%, compute EARs for semiannual, quarterly, monthly, daily and continuous compounding.   
+{% include JB/setup %}
+Using a stated rate of 4.25%, compute EARs for semiannual, quarterly, monthly, daily and continuous compounding.
 
 ```r
 ear(0.0425,2)
@@ -79,7 +82,7 @@ ear.continuous(0.0425)
 
 Example 2 Future value (FV) of a single sum
 ---------------------------------------------------------
-Calculate the FV of a $500 investment at the end of ten years if it earns an annually compounded rate of return of 6%.   
+Calculate the FV of a $500 investment at the end of ten years if it earns an annually compounded rate of return of 6%.
 
 ```r
 fv.simple(r=0.06,n=10,pv=-500)
@@ -91,7 +94,8 @@ fv.simple(r=0.06,n=10,pv=-500)
 
 Example 3 PV of a single sum
 --------------------------------------------
-Given a discount rate of 3%, calculate the PV of a $1,000,000 cash flow that will be received in five years.   
+{% include JB/setup %}
+Given a discount rate of 3%, calculate the PV of a $1,000,000 cash flow that will be received in five years.
 
 ```r
 pv.simple(r=0.03,n=5,fv=1000000)
@@ -103,7 +107,7 @@ pv.simple(r=0.03,n=5,fv=1000000)
 
 Example 4 FV of an ordinary annuity and annuity due
 ------------------------------------------
-What is the future value of an ordinary annuity that pays $15,000 per year at the end of each of the next 25 years, given the investment is expected to earn a 6% rate of return?    
+What is the future value of an ordinary annuity that pays $15,000 per year at the end of each of the next 25 years, given the investment is expected to earn a 6% rate of return?
 
 ```r
 fv.annuity(r=0.06,n=25,pmt=-15000,type=0)
@@ -113,7 +117,7 @@ fv.annuity(r=0.06,n=25,pmt=-15000,type=0)
 [1] 822967.7
 ```
 
-What is the future value of an annuity that pays $10,000 per year at the beginning of each of the next three years, commencing today, if the cash flows can be invested at an annual rate of 5%?    
+What is the future value of an annuity that pays $10,000 per year at the beginning of each of the next three years, commencing today, if the cash flows can be invested at an annual rate of 5%?
 
 ```r
 fv.annuity(r=0.05,n=3,pmt=-10000,type=1)
@@ -125,6 +129,7 @@ fv.annuity(r=0.05,n=3,pmt=-10000,type=1)
 
 Example 5 PV of an ordinary annuity and annuity due
 ----------------------------------------------------------
+{% include JB/setup %}
 What is the PV of an annuity that pays $20,000 per year at the end of each of the next 25 years, given a 6% discount rate?
 
 ```r
@@ -135,7 +140,7 @@ pv.annuity(r=0.06,n=25,pmt=-20000,type=0)
 [1] 255667.1
 ```
 
-Given a discount rate of 10%, what is the present value of a 10-year annuity that makes a series of $1000 payments at the beginning of each of the next three years, starting today?   
+Given a discount rate of 10%, what is the present value of a 10-year annuity that makes a series of $1000 payments at the beginning of each of the next three years, starting today?
 
 ```r
 pv.annuity(r=0.1,n=10,pmt=-1000,type=1)
@@ -159,6 +164,7 @@ pv.perpetuity(r=0.1,pmt=2.5,type=0)
 
 Example 7 Rate of return for a perpetuity
 ------------------------------------------------
+{% include JB/setup %}
 Using the preferred stock described in the preceding example, determine the rate of return that an investor would realize if she paid $75 per share for the stock.
 
 ```r
@@ -171,7 +177,7 @@ r.perpetuity(pmt=2.5,pv=-75)
 
 Example 8 PV of a bond's cash flows
 -------------------------------------
-A bond will make coupon interest payments of 70 HK$ (7% of its face value) at the end of each year and will also pay its face value of 1,000 HK$ at maturity in 10 years. If the appropriate discount rate is 6%, what is the present value of the bond's promised cash flows?     
+A bond will make coupon interest payments of 70 HK$ (7% of its face value) at the end of each year and will also pay its face value of 1,000 HK$ at maturity in 10 years. If the appropriate discount rate is 6%, what is the present value of the bond's promised cash flows?
 
 ```r
 pv(r=0.06,n=10,fv=1000,pmt=70,type=0)
@@ -183,6 +189,7 @@ pv(r=0.06,n=10,fv=1000,pmt=70,type=0)
 
 Example 9 Computing the FV and PV of an uneven cash How series
 -----------------------------------------------------------
+{% include JB/setup %}
 Using a rate of return of 6%, compute the future value of the 6-year uneven cash flow stream occured at the end of each year.  (-10000 -5000 2000 4000 6000 8000)
 
 ```r
@@ -193,7 +200,7 @@ fv.uneven(r=0.06, cf=c(-10000, -5000, 2000, 4000, 6000, 8000))
 [1] -1541.791
 ```
 
-Compute the present value of this 6-year uneven cash How stream described above using a 10% rate of return.     
+Compute the present value of this 6-year uneven cash How stream described above using a 10% rate of return.
 
 ```r
 pv.uneven(r=0.1, cf=c(-10000, -5000, 2000, 4000, 6000, 8000))
@@ -205,7 +212,7 @@ pv.uneven(r=0.1, cf=c(-10000, -5000, 2000, 4000, 6000, 8000))
 
 Example 10 Loan payment calculation: Annual payments and Quarterly payments
 --------------------------------------------------------------------------------
-A company plans to borrow $500,000 for five years. The company's bank will lend the money at a rate of 6% and requires that the loan be paid off in five equal end-of-year payments. Calculate the amount of the payment that the company must make in order to fully amortize this loan in five years.   
+A company plans to borrow $500,000 for five years. The company's bank will lend the money at a rate of 6% and requires that the loan be paid off in five equal end-of-year payments. Calculate the amount of the payment that the company must make in order to fully amortize this loan in five years.
 
 ```r
 pmt(r=0.06,n=5,pv=500000,fv=0)
@@ -217,7 +224,8 @@ pmt(r=0.06,n=5,pv=500000,fv=0)
 
 Example 11 Computing the number of periods in an annuity
 ---------------------------------------------------------------------
-How many $1000 end-of-year payments are required to accumulate $10,000 if the discount rate is 9%?   
+{% include JB/setup %}
+How many $1000 end-of-year payments are required to accumulate $10,000 if the discount rate is 9%?
 
 ```r
 n.period(r=0.09,pv=0,fv=10000,pmt=-1000,type=0)
@@ -229,7 +237,7 @@ n.period(r=0.09,pv=0,fv=10000,pmt=-1000,type=0)
 
 Example 12 Computing the rate of return for a period
 -------------------------------------------------------------------------------------
-Suppose you have the opponunity to invest $1000 at the end of each of the next five years in exchange for $6000 at the end of the fifth year. What is the annual rate of return on this investment?    
+Suppose you have the opponunity to invest $1000 at the end of each of the next five years in exchange for $6000 at the end of the fifth year. What is the annual rate of return on this investment?
 
 ```r
 discount.rate(n=5,fv=6000,pmt=-1000,pv=0,type=0)
@@ -241,7 +249,8 @@ discount.rate(n=5,fv=6000,pmt=-1000,pv=0,type=0)
 
 Example 13 Computing NPV
 ------------------------------------------
-Calculate the NPV of an investment project with an initial cost of $6 million and positive cash flows of $2.6 million at the end of Year 1, $2.4 million at the end of Year 2, and $3.8 million at the end ofYear 3. Use 8% as the discount rate.   
+{% include JB/setup %}
+Calculate the NPV of an investment project with an initial cost of $6 million and positive cash flows of $2.6 million at the end of Year 1, $2.4 million at the end of Year 2, and $3.8 million at the end ofYear 3. Use 8% as the discount rate.
 
 ```r
 npv(r=0.08, cf=c(-6,2.6,2.4,3.8))
@@ -253,7 +262,7 @@ npv(r=0.08, cf=c(-6,2.6,2.4,3.8))
 
 Example 14 Computing IRR
 -----------------------------------------
-What is the IRR for the investment described in example 13?   
+What is the IRR for the investment described in example 13?
 
 ```r
 irr(cf=c(-6,2.6,2.4,3.8))
@@ -265,7 +274,8 @@ irr(cf=c(-6,2.6,2.4,3.8))
 
 Example 15 Computing HPR
 --------------------------------------------
-Suppose a stock is purchased for $3 and is sold for $4 six months later, during which time it paid $0.50 in dividends. What is the holding period return?   
+{% include JB/setup %}
+Suppose a stock is purchased for $3 and is sold for $4 six months later, during which time it paid $0.50 in dividends. What is the holding period return?
 
 ```r
 hpr(ev=4,bv=3,cfr=0.5)
@@ -277,7 +287,7 @@ hpr(ev=4,bv=3,cfr=0.5)
 
 Example 16 Computing time-weighted rate of return
 ---------------------------------------------------
-An investor purchases a share of stock at t = 0 for $10. At the end of the year, t = 1 , the investor buys another share of the same stock for $12. At the end of Year 2, the investor sells both shares for $13 each. At the end of both years 1 and 2, the stock paid a $1 per share dividend. What is the annual time-weighted rate of return for this investment?    
+An investor purchases a share of stock at t = 0 for $10. At the end of the year, t = 1 , the investor buys another share of the same stock for $12. At the end of Year 2, the investor sells both shares for $13 each. At the end of both years 1 and 2, the stock paid a $1 per share dividend. What is the annual time-weighted rate of return for this investment?
 
 ```r
 twrr(ev=c(12,26),bv=c(10,24),cfr=c(1,2))
@@ -289,7 +299,8 @@ twrr(ev=c(12,26),bv=c(10,24),cfr=c(1,2))
 
 Example 17 Computing Bank discount yield
 -----------------------------------------------
-Calculate the bank discount yield for a T-hill priced at $9,850, with a face value of $10,000 and 120 days until maturity.    
+{% include JB/setup %}
+Calculate the bank discount yield for a T-hill priced at $9,850, with a face value of $10,000 and 120 days until maturity.
 
 ```r
 bdy(d=150,f=10000,t=120)
@@ -301,7 +312,7 @@ bdy(d=150,f=10000,t=120)
 
 Example 18 Convert holding period return to the effective annual rate
 ------------------------------------------------------------------------
-Compute the EAY using the 120-day HPY of 2.85%.    
+Compute the EAY using the 120-day HPY of 2.85%.
 
 ```r
 hpr2ear(hpr=0.0285,t=120)
@@ -313,7 +324,8 @@ hpr2ear(hpr=0.0285,t=120)
 
 Example 19 Computing money market yield
 -----------------------------------------------------------------------------
-What is the money market yield for a 120-day T-bill that has a bank discount yield of 4.50%?    
+{% include JB/setup %}
+What is the money market yield for a 120-day T-bill that has a bank discount yield of 4.50%?
 
 ```r
 bdy2mmy(bdy=0.045,t=120)
@@ -325,7 +337,7 @@ bdy2mmy(bdy=0.045,t=120)
 
 Example 20 Converting among EAR, HPY, and MMY
 ----------------------------------------------------
-Assume the price of a $10,000 T-hill that matures in 150 days is $9,800. The quoted money market yield is 4.898%. Compute the HPY and the EAR.    
+Assume the price of a $10,000 T-hill that matures in 150 days is $9,800. The quoted money market yield is 4.898%. Compute the HPY and the EAR.
 
 ```r
 hpr(ev=10000,bv=9800)
@@ -361,7 +373,8 @@ ear2hpr(ear=hpr2ear(hpr=mmy2hpr(mmy=0.04898,t=150),t=150),t=150)
 
 Example 21 Bond-equivalent yield calculation
 -----------------------------------------------------
-What is the yield on a bond-equivalent basis of a 3-month loan has a holding period yield of 4%?       
+{% include JB/setup %}
+What is the yield on a bond-equivalent basis of a 3-month loan has a holding period yield of 4%?
 
 ```r
 hpr2bey(hpr=0.04,t=3)
@@ -371,7 +384,7 @@ hpr2bey(hpr=0.04,t=3)
 [1] 0.1632
 ```
 
-What is the yield on a bond-equivalent basis of an investment with 6% effective annual yield?   
+What is the yield on a bond-equivalent basis of an investment with 6% effective annual yield?
 
 ```r
 ear2bey(ear=0.06)
@@ -383,7 +396,7 @@ ear2bey(ear=0.06)
 
 Example 22 Weighted mean as a portfolio return
 ---------------------------------------------------
-A portfolio consists of 40% common stocks, 50% bonds, and 10% cash. If the return on common stocks is 9%, the return on bonds is 6%, and the return on cash is 1%, what is the portfolio return?     
+A portfolio consists of 40% common stocks, 50% bonds, and 10% cash. If the return on common stocks is 9%, the return on bonds is 6%, and the return on cash is 1%, what is the portfolio return?
 
 ```r
 wpr(r=c(0.09, 0.06, 0.01),w=c(0.4,0.5,0.1))
@@ -393,7 +406,7 @@ wpr(r=c(0.09, 0.06, 0.01),w=c(0.4,0.5,0.1))
 [1] 0.067
 ```
 
-or   
+or
 
 ```r
 rs=c(0.09, 0.06, 0.01)
@@ -407,7 +420,8 @@ wpr(r=rs,w=ws)
 
 Example 23 Geometric mean return
 -------------------------------------------------
-For the last three years, the returns for Acme Corporation common stock have been -5%, 11%, and 9%. Compute the compound annual rate of return over the 3-year period.     
+{% include JB/setup %}
+For the last three years, the returns for Acme Corporation common stock have been -5%, 11%, and 9%. Compute the compound annual rate of return over the 3-year period.
 
 ```r
 geometric.mean(r=c(-0.05, 0.11, 0.09))
@@ -419,7 +433,7 @@ geometric.mean(r=c(-0.05, 0.11, 0.09))
 
 Example 24 Calculating average cost with the harmonic mean
 ------------------------------------------------------------
-An investor purchases $10,000 of stock each month, and over the last three months the prices paid per share were $4.5, $5.2, and $4.8. What is the average cost per share for the shares acquired?      
+An investor purchases $10,000 of stock each month, and over the last three months the prices paid per share were $4.5, $5.2, and $4.8. What is the average cost per share for the shares acquired?
 
 ```r
 harmonic.mean(p=c(4.5,5.2,4.8))
@@ -431,7 +445,8 @@ harmonic.mean(p=c(4.5,5.2,4.8))
 
 Example 25 Download historical financial data from Yahoo finance and Google Finance
 ---------------------------------------------------------------------------------------
-Download historical financial data from Yahoo finance       
+{% include JB/setup %}
+Download historical financial data from Yahoo finance
 
 ```r
 apple <- get.ohlc.yahoo(symbol="AAPL",start="2013-07-01",end="2013-08-01")
@@ -439,7 +454,7 @@ head(apple)
 ```
 
 ```
-         date   open   high    low  close    volume adjusted
+date   open   high    low  close    volume adjusted
 23 2013-07-01 402.69 412.27 401.22 409.22  97763400 55.60200
 22 2013-07-02 409.96 421.63 409.47 418.49 117466300 56.86155
 21 2013-07-03 420.86 422.98 417.45 420.80  60232200 57.17542
@@ -448,7 +463,7 @@ head(apple)
 18 2013-07-09 413.60 423.50 410.38 422.35  88146100 57.38602
 ```
 
-Download historical financial data from Google Finance    
+Download historical financial data from Google Finance
 
 ```r
 apple <- get.ohlc.google(symbol="AAPL",start="2013-07-01",end="2013-08-01")
@@ -456,7 +471,7 @@ head(apple)
 ```
 
 ```
-         date  open  high   low close    volume
+date  open  high   low close    volume
 23 2013-07-01 57.53 58.90 57.32 58.46  97793045
 22 2013-07-02 58.57 60.23 58.50 59.78 117521579
 21 2013-07-03 60.12 60.43 59.64 60.11  60232158
@@ -473,7 +488,7 @@ head(applespy$AAPL)
 ```
 
 ```
-          date   open   high    low  close    volume adjusted
+date   open   high    low  close    volume adjusted
 146 2013-01-02 553.82 555.00 541.63 549.03 140129500 73.67851
 145 2013-01-03 547.88 549.67 541.00 542.10  88241300 72.74852
 144 2013-01-04 536.97 538.63 525.83 527.00 148583400 70.72214
@@ -487,7 +502,7 @@ head(applespy$SPY)
 ```
 
 ```
-          date   open   high    low  close    volume adjusted
+date   open   high    low  close    volume adjusted
 146 2013-01-02 145.11 146.15 144.73 146.06 192059000 137.5859
 145 2013-01-03 145.99 146.37 145.34 145.73 144761800 137.2750
 144 2013-01-04 145.97 146.61 145.67 146.37 116817700 137.8779
@@ -504,7 +519,7 @@ head(all$YHOO)
 ```
 
 ```
-          date  open  high   low close   volume
+date  open  high   low close   volume
 146 2013-01-02 20.20 20.32 20.01 20.08 20463033
 145 2013-01-03 20.05 20.10 19.72 19.78 19599094
 144 2013-01-04 19.76 19.95 19.72 19.86 12489700
@@ -518,7 +533,7 @@ head(all$SPY)
 ```
 
 ```
-          date   open   high    low  close    volume
+date   open   high    low  close    volume
 146 2013-01-02 145.11 146.15 144.73 146.06 192058911
 145 2013-01-03 145.99 146.37 145.34 145.73 144761781
 144 2013-01-04 145.97 146.61 145.67 146.37 116817675
@@ -532,7 +547,7 @@ head(all$SINA)
 ```
 
 ```
-          date  open  high   low close  volume
+date  open  high   low close  volume
 146 2013-01-02 52.24 55.19 51.75 52.27 3947513
 145 2013-01-03 52.34 53.61 51.54 52.77 2200712
 144 2013-01-04 52.70 52.94 51.70 52.76 1466652
@@ -543,52 +558,53 @@ head(all$SINA)
 
 Example 26 Plots open-high-low-close chart of (financial) time series.
 ----------------------------------------------------------------------
-Line chart   
+Line chart
 
 ```r
 apple <- get.ohlc.yahoo(symbol="AAPL",start="2013-07-01",end="2013-08-01")
 lineChart(apple,y="adjusted")
 ```
 
-![](/figure/fincal_1-1.png) 
+![](/figure/fincal_1-1.png)
 
-Candlestick chart     
+Candlestick chart
 
 ```r
 apple <- get.ohlc.yahoo(symbol="AAPL",start="2013-07-01",end="2013-08-01")
 candlestickChart(apple,y="adjusted")
 ```
 
-![](/figure/fincal_2-1.png) 
+![](/figure/fincal_2-1.png)
 
-Volume chart   
+Volume chart
 
 ```r
 apple <- get.ohlc.yahoo("AAPL",start="2014-04-01",end="2014-04-30")
 volumeChart(apple,y="adjusted")
 ```
 
-![](/figure/fincal_3-1.png) 
+![](/figure/fincal_3-1.png)
 
-Multiple line chart   
+Multiple line chart
 
 ```r
 all <- get.ohlcs.yahoo(c("SBUX","AAPL","SPY"),start="2013-01-01",end="2013-06-30")
 lineChartMult(all,y="adjusted")
 ```
 
-![](/figure/fincal_4-1.png) 
+![](/figure/fincal_4-1.png)
 
 Examples 27 Inventory Expense Recognition -- cost of goods sold
 ------------------------------------------------
+{% include JB/setup %}
 Three methods: first-in, first-out (FIFO) method; last-in, first-out (LIFO) method; weighted average cost method.
 
-e.g. during one month   
-beginning inventory: 20 units @ $2/unit   
-buy                : 30 units @ $3/unit    
-buy                : 50 units @ $5/unit    
-sold               : 70 units    
-what is the cost of goods sold using three menthod?   
+e.g. during one month
+beginning inventory: 20 units @ $2/unit
+buy                : 30 units @ $3/unit
+buy                : 50 units @ $5/unit
+sold               : 70 units
+what is the cost of goods sold using three menthod?
 
 ```r
 # first-in, first-out (FIFO) method
@@ -631,9 +647,9 @@ $endingInventory
 
 Example 28 Depreciation Expense Recognition
 ----------------------------------------------
-Methods: straight line depreciation method, double-declining balance (DDB)   
-e.g.,   
-One Company recently purchased a machine at a cost of $9,800. The machine is expected to have a residual value of $2,000 at the end of its useful life in five years. What is the depreciation expense for all five years using two different menthods?  
+Methods: straight line depreciation method, double-declining balance (DDB)
+e.g.,
+One Company recently purchased a machine at a cost of $9,800. The machine is expected to have a residual value of $2,000 at the end of its useful life in five years. What is the depreciation expense for all five years using two different menthods?
 
 
 ```r
@@ -651,7 +667,7 @@ ddb(cost=9800,rv=2000,t=5)
 ```
 
 ```
-     t    ddb
+t    ddb
 [1,] 1 3920.0
 [2,] 2 2352.0
 [3,] 3 1411.2
@@ -661,7 +677,8 @@ ddb(cost=9800,rv=2000,t=5)
 
 Example 29 Weighted average shares and EPS
 ---------------------------------------------
-One company has net income of $100,000 and paid $10,000 cash dividends to its preferred shareholders and $10,750 cash dividends to its common shareholders. At the beginning of the year, there were 20,000 shares of common stock outstanding. 20,000 new shares were issued on July 1 . what is the weighted average shares and basic EPS?   
+{% include JB/setup %}
+One company has net income of $100,000 and paid $10,000 cash dividends to its preferred shareholders and $10,750 cash dividends to its common shareholders. At the beginning of the year, there were 20,000 shares of common stock outstanding. 20,000 new shares were issued on July 1 . what is the weighted average shares and basic EPS?
 
 ```r
 # weighted average shares

@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Webpages]
 image: /figure
 ---
+{% include JB/setup %}
 
 #### Q & A
 
@@ -32,7 +33,7 @@ image: /figure
 #### Tutorials
 
 * [Quick-R](http://www.statmethods.net/)
-* [A List of Free R Tutorials and Resources in University webpages](http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)   
+* [A List of Free R Tutorials and Resources in University webpages](http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)
 * [List of Free Online R Tutorials that are not hosted in the webpages of academic institutes](http://pairach.com/2012/06/17/r_tutorials_non-uni/)
 * [60+ R resources to improve your data skills](http://www.computerworld.com/s/article/9239799/60_R_resources_to_improve_your_data_skills)
 * [inside-R | A Community Site for R | A Community Site for R – Sponsored by Revolution Analytics](http://www.inside-r.org/)
@@ -128,7 +129,7 @@ image: /figure
 
 #### Tech-post
 
-* [A million ways to connect R and Excel](http://www.thertrader.com/2014/02/11/a-million-ways-to-connect-r-and-excel/) 
+* [A million ways to connect R and Excel](http://www.thertrader.com/2014/02/11/a-million-ways-to-connect-r-and-excel/)
 
 #### Jobs
 

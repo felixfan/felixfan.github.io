@@ -5,26 +5,27 @@ categories: [Mathematics]
 tags: [Mathematics]
 image: /figure
 ---
+{% include JB/setup %}
 
 #### Guess number
 
 ```
-Ask a friend to write down a number with more than 3 digits. 
+Ask a friend to write down a number with more than 3 digits.
 Example: 12345
 
-Ask them to add the digits. 
-Example: 1+2+3+4+5=15      
+Ask them to add the digits.
+Example: 1+2+3+4+5=15
 
-Ask them to subtract this number from the original one. 
+Ask them to subtract this number from the original one.
 Example: 12345–15=12330
 
-Ask them to select any digit from this new number and strike it out, 
-without showing you. Example: 1330    
+Ask them to select any digit from this new number and strike it out,
+without showing you. Example: 1330
 
-Ask them to add the remaining digits and write down the answer they get. 
+Ask them to add the remaining digits and write down the answer they get.
 Example: 1+3+3+0 =7
 
-Ask them to tell you the number they get (7) 
+Ask them to tell you the number they get (7)
 and you will tell them which number they struck out.
 
 SOLUTION：
@@ -37,7 +38,7 @@ Example: The next multiple of 9 here is 9, 9–7 = 2 and there you have your ans
 ```
 Take two pieces of paper and hand one to a friend. On yours, without letting them see, write the number 1089, then fold the paper to keep it hidden.
 
-Ask them to think of a 3-digit number that cannot be the same backwards.Then ask them to put the numbers in order from greatest to smallest. Don't let them show what they've written. 
+Ask them to think of a 3-digit number that cannot be the same backwards.Then ask them to put the numbers in order from greatest to smallest. Don't let them show what they've written.
 Example: 931
 
 Below their number, ask them to write the same digits, but in reverse order, from smallest to greatest.
@@ -55,5 +56,5 @@ Example: 297+ 792 = 1089
 Finally, you can reveal your own number, which will be exactly what they have written.
 ```
 
-Have fun!     
+Have fun!
 

@@ -5,6 +5,7 @@ categories: [Database]
 tags: [MySQL]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Install MySQL on Windows 7
 
@@ -14,7 +15,7 @@ image: /figure
 
 [MySQL Installer](http://dev.mysql.com/downloads/installer/)
 
-If you do not want to creat a new account, just click **"No thanks, just start my download."** (at the bottom of the page).    
+If you do not want to creat a new account, just click **"No thanks, just start my download."** (at the bottom of the page).
 
 **Note:** MySQL Installer is 32 bit, but will install both 32 bit and 64 bit binaries.
 
@@ -24,13 +25,13 @@ If you do not want to creat a new account, just click **"No thanks, just start m
 
 ### Creating A New MySQL Connection
 
-[Creating A New MySQL Connection](http://dev.mysql.com/doc/workbench/en/wb-mysql-connections-new.html) "MyFirstConnection".   
+[Creating A New MySQL Connection](http://dev.mysql.com/doc/workbench/en/wb-mysql-connections-new.html) "MyFirstConnection".
 
 ### Load data from csv file
 
-The example data used is a typical PLINK association output contains 13 columns (CHR, SNP, BP, A1, F_A, F_U, A2, CHISQ, P, OR, SE, L95, U95).    
+The example data used is a typical PLINK association output contains 13 columns (CHR, SNP, BP, A1, F_A, F_U, A2, CHISQ, P, OR, SE, L95, U95).
 
-First create tables.   
+First create tables.
 
 ```
 CREATE TABLE `gwas`(
@@ -68,7 +69,7 @@ CREATE TABLE `replicate`(
 PRIMARY KEY (`SNP`));
 ```
 
-Then load the data.   
+Then load the data.
 
 ```
 LOAD DATA LOCAL INFILE 'C:/Users/alice/Documents/MySQL/LoadFileExample/gwas.csv' INTO TABLE gwas FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
@@ -78,9 +79,9 @@ LOAD DATA LOCAL INFILE 'C:/Users/alice/Documents/MySQL/LoadFileExample/gwas.csv'
 LOAD DATA LOCAL INFILE 'C:/Users/alice/Documents/MySQL/LoadFileExample/replicate.csv' INTO TABLE replicate FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 ```
 
-Note 1: The original PLINK output was import to EXCEL and the csv file was exported. That's why I used **FIELDS TERMINATED BY ','** here.   
+Note 1: The original PLINK output was import to EXCEL and the csv file was exported. That's why I used **FIELDS TERMINATED BY ','** here.
 
-Note 2: I delete the first line (the header), if the header line was kept, you need to add **IGNORE 1 LINES**.     
+Note 2: I delete the first line (the header), if the header line was kept, you need to add **IGNORE 1 LINES**.
 
 ### SELECT from table
 
@@ -90,7 +91,7 @@ Note 2: I delete the first line (the header), if the header line was kept, you n
 SELECT * FROM gwas ORDER BY CHR ASC, BP ASC;
 ```
 
-Equivalent to (ascending order is default)        
+Equivalent to (ascending order is default)
 
 ```
 SELECT * FROM gwas ORDER BY CHR, BP;
@@ -102,7 +103,7 @@ SELECT * FROM gwas ORDER BY CHR, BP;
 SELECT * FROM gwas WHERE P<0.00001;
 ```
 
-order the output by 'CHR' and 'BP'  
+order the output by 'CHR' and 'BP'
 
 
 ```
@@ -113,7 +114,7 @@ SELECT * FROM gwas WHERE P<0.00001 ORDER BY CHR, BP;
 SELECT * FROM gwas WHERE P<0.00001 AND gwas.OR>2 ORDER BY CHR, BP;
 ```
 
-Note: 'OR' is the key word of MySQL. when select the row with 'OR>2', you need to add the table name 'gwas' here.    
+Note: 'OR' is the key word of MySQL. when select the row with 'OR>2', you need to add the table name 'gwas' here.
 
 ### JOIN two tables
 

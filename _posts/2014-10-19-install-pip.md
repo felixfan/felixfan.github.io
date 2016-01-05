@@ -5,8 +5,9 @@ categories: [Python]
 tags: [Python, pip]
 image: /figure
 ---
+{% include JB/setup %}
 
-Starting from version Python 3.4, pip is already included in the regular install, it is under the **Scripts** directory. so what you need to do is just add it (e.g., C:\\Python34\\Scripts) your system's PATH environment variable.     
+Starting from version Python 3.4, pip is already included in the regular install, it is under the **Scripts** directory. so what you need to do is just add it (e.g., C:\\Python34\\Scripts) your system's PATH environment variable.
 
 If pip is not installed, you can add the **Scripts** directory to your system's PATH environment variable. Then use the **easy_install** to install pip.
 
@@ -14,19 +15,19 @@ If pip is not installed, you can add the **Scripts** directory to your system's 
 easy_install pip
 ```
 
-Just type **pip** to see the help information.    
+Just type **pip** to see the help information.
 
 ```
 pip
 ```
 
-Install package using the following command:   
+Install package using the following command:
 
 ```
 pip install pkgName
 ```
 
-e.g.,   
+e.g.,
 
 ```
 pip install matplotlib

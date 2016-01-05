@@ -5,8 +5,9 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
-### Download a file 
+### Download a file
 
 ```r
 require(RCurl)
@@ -16,7 +17,7 @@ myData
 ```
 
 ```
-  test   class
+test   class
 1    1    case
 2    2 control
 ```
@@ -37,8 +38,8 @@ filenames
 
 ```r
 for (filename in filenames) {
-    download.file(paste(url, filename, sep = ""), paste(getwd(), "/", filename, 
-        sep = ""))
+download.file(paste(url, filename, sep = ""), paste(getwd(), "/", filename,
+sep = ""))
 }
 ```
 

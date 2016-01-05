@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Data
 
@@ -36,7 +37,7 @@ shapiro.test(x1)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x1
 W = 0.9157, p-value = 0.1653
@@ -48,7 +49,7 @@ shapiro.test(x2)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x2
 W = 0.834, p-value = 0.0002918
@@ -60,7 +61,7 @@ shapiro.test(x3)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x3
 W = 0.919, p-value = 9.795e-16
@@ -72,7 +73,7 @@ shapiro.test(x4)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x4
 W = 0.6059, p-value = 2.884e-05
@@ -84,7 +85,7 @@ shapiro.test(x5)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x5
 W = 0.8451, p-value = 0.0004895
@@ -96,7 +97,7 @@ shapiro.test(x6)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x6
 W = 0.4848, p-value < 2.2e-16
@@ -108,7 +109,7 @@ shapiro.test(x7)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x7
 W = 0.975, p-value = 0.9235
@@ -120,7 +121,7 @@ shapiro.test(x8)
 
 ```
 
-	Shapiro-Wilk normality test
+Shapiro-Wilk normality test
 
 data:  x8
 W = 0.9987, p-value = 0.9779
@@ -149,7 +150,7 @@ ad.test(x1)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x1
 A = 0.7072, p-value = 0.05103
@@ -161,7 +162,7 @@ ad.test(x2)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x2
 A = 1.96, p-value = 4.006e-05
@@ -173,7 +174,7 @@ ad.test(x3)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x3
 A = 17.95, p-value < 2.2e-16
@@ -185,7 +186,7 @@ ad.test(x4)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x4
 A = 2.059, p-value = 1.542e-05
@@ -197,7 +198,7 @@ ad.test(x5)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x5
 A = 1.806, p-value = 9.715e-05
@@ -209,7 +210,7 @@ ad.test(x6)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x6
 A = Inf, p-value = NA
@@ -221,7 +222,7 @@ ad.test(x7)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x7
 A = 0.1743, p-value = 0.908
@@ -233,7 +234,7 @@ ad.test(x8)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x8
 A = 0.1436, p-value = 0.9704
@@ -245,7 +246,7 @@ ad.test(x9)
 
 ```
 
-	Anderson-Darling normality test
+Anderson-Darling normality test
 
 data:  x9
 A = 0.2392, p-value = 0.7793
@@ -254,6 +255,6 @@ A = 0.2392, p-value = 0.7793
 
 ### Summary
 
-When the sample size is big, the test result is quite reliable.   
+When the sample size is big, the test result is quite reliable.
 
 

@@ -5,6 +5,7 @@ categories: [Bioinformatics]
 tags: [Bioinformatics,Linux]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Usage
 
@@ -14,7 +15,7 @@ find -path pattern -type [d|f]
 
 ### Find directories
 
-Find all directories whose name start with "2" under current location.   
+Find all directories whose name start with "2" under current location.
 
 ```
 find -path './2*' -type d
@@ -28,6 +29,6 @@ find -path './*/2*' -type d
 
 ### Find files
 
-Change the '-type d' to '-type f'.    
+Change the '-type d' to '-type f'.
 
 

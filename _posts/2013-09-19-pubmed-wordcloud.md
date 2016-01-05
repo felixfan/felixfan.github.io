@@ -5,6 +5,7 @@ categories: [Bioinformatics]
 tags: [wordcloud, PubMed, R, Plot]
 image: /figure
 ---
+{% include JB/setup %}
 
 PubMedWordcloud is a R Package for creating a word cloud using the abstract of publications from PubMed. PubMedWordcloud makes it easy to created a word cloud using the abstracts of your publications to represent a visual description of your work.
 

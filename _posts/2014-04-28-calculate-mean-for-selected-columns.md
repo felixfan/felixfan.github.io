@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R, reshape2, plyr]
 image: /figure
 ---
+{% include JB/setup %}
 
 
 ```r
@@ -12,7 +13,7 @@ head(iris)
 ```
 
 ```
-  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1          5.1         3.5          1.4         0.2  setosa
 2          4.9         3.0          1.4         0.2  setosa
 3          4.7         3.2          1.3         0.2  setosa
@@ -28,7 +29,7 @@ head(mydata)
 ```
 
 ```
-  Sepal.Length Sepal.Width Petal.Length Petal.Width Species ID
+Sepal.Length Sepal.Width Petal.Length Petal.Width Species ID
 1          5.1         3.5          1.4         0.2  setosa  1
 2          4.9         3.0          1.4         0.2  setosa  2
 3          4.7         3.2          1.3         0.2  setosa  3
@@ -49,7 +50,7 @@ molten[c(1:5, 55, 140), ]
 ```
 
 ```
-    ID    Species     variable value
+ID    Species     variable value
 1    1     setosa Sepal.Length   5.1
 2    2     setosa Sepal.Length   4.9
 3    3     setosa Sepal.Length   4.7
@@ -70,7 +71,7 @@ dcast(molten, formula = ID ~ variable)
 ```
 
 ```
-  ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1  1           38          38           38          38
 2  2           38          38           38          38
 3  3           37          37           37          37
@@ -82,7 +83,7 @@ dcast(molten, formula = ID ~ variable, mean)
 ```
 
 ```
-  ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1  1        5.853       3.118        3.800       1.258
 2  2        5.787       3.026        3.689       1.163
 3  3        5.827       3.008        3.751       1.178
@@ -94,7 +95,7 @@ dcast(molten, formula = ID ~ variable, median)
 ```
 
 ```
-  ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1  1         5.75         3.1         4.35        1.35
 2  2         5.60         3.0         4.10        1.30
 3  3         5.80         3.0         4.50        1.30
@@ -108,7 +109,7 @@ dcast(molten, formula = Species ~ variable)
 ```
 
 ```
-     Species Sepal.Length Sepal.Width Petal.Length Petal.Width
+Species Sepal.Length Sepal.Width Petal.Length Petal.Width
 1     setosa           50          50           50          50
 2 versicolor           50          50           50          50
 3  virginica           50          50           50          50
@@ -119,7 +120,7 @@ dcast(molten, formula = Species ~ variable, mean)
 ```
 
 ```
-     Species Sepal.Length Sepal.Width Petal.Length Petal.Width
+Species Sepal.Length Sepal.Width Petal.Length Petal.Width
 1     setosa        5.006       3.428        1.462       0.246
 2 versicolor        5.936       2.770        4.260       1.326
 3  virginica        6.588       2.974        5.552       2.026
@@ -134,7 +135,7 @@ dcast(molten, formula = ID + Species ~ variable)
 ```
 
 ```
-   ID    Species Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID    Species Sepal.Length Sepal.Width Petal.Length Petal.Width
 1   1     setosa           13          13           13          13
 2   1 versicolor           12          12           12          12
 3   1  virginica           13          13           13          13
@@ -154,7 +155,7 @@ dcast(molten, formula = ID + Species ~ variable, mean)
 ```
 
 ```
-   ID    Species Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID    Species Sepal.Length Sepal.Width Petal.Length Petal.Width
 1   1     setosa        5.092       3.515        1.492      0.2231
 2   1 versicolor        5.925       2.725        4.292      1.3500
 3   1  virginica        6.546       3.085        5.654      2.2077
@@ -177,7 +178,7 @@ dcast(molten, formula = Species + ID ~ variable)
 ```
 
 ```
-      Species ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+Species ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1      setosa  1           13          13           13          13
 2      setosa  2           13          13           13          13
 3      setosa  3           12          12           12          12
@@ -197,7 +198,7 @@ dcast(molten, formula = Species + ID ~ variable, mean)
 ```
 
 ```
-      Species ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+Species ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1      setosa  1        5.092       3.515        1.492      0.2231
 2      setosa  2        4.931       3.292        1.438      0.2308
 3      setosa  3        4.950       3.442        1.417      0.2333
@@ -222,7 +223,7 @@ dcast(molten, formula = ID ~ variable, subset = .(Species == "setosa"))
 ```
 
 ```
-  ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1  1           13          13           13          13
 2  2           13          13           13          13
 3  3           12          12           12          12
@@ -234,7 +235,7 @@ dcast(molten, formula = ID ~ variable, mean, subset = .(Species == "setosa"))
 ```
 
 ```
-  ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1  1        5.092       3.515        1.492      0.2231
 2  2        4.931       3.292        1.438      0.2308
 3  3        4.950       3.442        1.417      0.2333
@@ -250,7 +251,7 @@ dcast(molten, formula = ID ~ variable, mean, margins = TRUE)
 ```
 
 ```
-     ID Sepal.Length Sepal.Width Petal.Length Petal.Width (all)
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width (all)
 1     1        5.853       3.118        3.800       1.258 3.507
 2     2        5.787       3.026        3.689       1.163 3.416
 3     3        5.827       3.008        3.751       1.178 3.441
@@ -263,7 +264,7 @@ dcast(molten, formula = ID ~ variable, mean, margins = "ID")
 ```
 
 ```
-     ID Sepal.Length Sepal.Width Petal.Length Petal.Width
+ID Sepal.Length Sepal.Width Petal.Length Petal.Width
 1     1        5.853       3.118        3.800       1.258
 2     2        5.787       3.026        3.689       1.163
 3     3        5.827       3.008        3.751       1.178

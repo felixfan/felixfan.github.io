@@ -4,13 +4,14 @@ layout: post
 categories: [RStudy]
 tags: [R, MiKTeX, LaTeX]
 ---
+{% include JB/setup %}
 
 When I use {devtools} to builds and checks a source package, I got the Error: Font ts1-zi4r at 540 not found.
 
-OS: Win7    
-R: 3.0.2    
-RStudio: 0.98.309    
-MikTeX: 2.9   
+OS: Win7
+R: 3.0.2
+RStudio: 0.98.309
+MikTeX: 2.9
 
 I solved this peoblem using the following method:
 

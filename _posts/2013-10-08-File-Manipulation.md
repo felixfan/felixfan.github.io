@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+{% include JB/setup %}
 
 ### Creat directories
 
@@ -40,7 +41,7 @@ getwd()
 
 
 ### Create file
-creates files with the given names if they do not already exist and truncates them if they do.   
+creates files with the given names if they do not already exist and truncates them if they do.
 
 
 ```r
@@ -97,7 +98,7 @@ head(mydata1)
 ```
 
 ```
-  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1          5.1         3.5          1.4         0.2  setosa
 2          4.9         3.0          1.4         0.2  setosa
 3          4.7         3.2          1.3         0.2  setosa
@@ -107,7 +108,7 @@ head(mydata1)
 ```
 
 
-or   
+or
 
 
 ```r
@@ -116,7 +117,7 @@ head(mydata2)
 ```
 
 ```
-  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1          5.1         3.5          1.4         0.2  setosa
 2          4.9         3.0          1.4         0.2  setosa
 3          4.7         3.2          1.3         0.2  setosa
@@ -160,7 +161,7 @@ file.exists("test1.csv")
 
 
 ### Rename file
-rename "test.csv" to "test2.csv".    
+rename "test.csv" to "test2.csv".
 
 
 ```r
@@ -173,7 +174,7 @@ file.rename("test.csv", "test2.csv")
 
 
 ### Append file
-Append "test2.csv" to "test1.csv".     
+Append "test2.csv" to "test1.csv".
 
 
 ```r
@@ -189,7 +190,7 @@ head(read.csv("test1.csv", header = FALSE))
 ```
 
 ```
-            V1          V2           V3          V4      V5
+V1          V2           V3          V4      V5
 1 Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 2          5.1         3.5          1.4         0.2  setosa
 3          4.9           3          1.4         0.2  setosa
@@ -200,7 +201,7 @@ head(read.csv("test1.csv", header = FALSE))
 
 
 ### Copy file
-Copy "test1.csv" to "test.csv".    
+Copy "test1.csv" to "test.csv".
 
 
 ```r
@@ -216,7 +217,7 @@ head(read.csv("test.csv", header = FALSE))
 ```
 
 ```
-            V1          V2           V3          V4      V5
+V1          V2           V3          V4      V5
 1 Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 2          5.1         3.5          1.4         0.2  setosa
 3          4.9           3          1.4         0.2  setosa
@@ -234,9 +235,9 @@ file.info("test.csv")
 ```
 
 ```
-         size isdir mode               mtime               ctime
+size isdir mode               mtime               ctime
 test.csv 4177 FALSE  666 2013-10-08 12:45:40 2013-10-08 12:45:05
-                       atime exe
+atime exe
 test.csv 2013-10-08 12:45:40  no
 ```
 
