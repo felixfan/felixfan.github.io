@@ -147,11 +147,11 @@ ggsave("plot.png", width = 5, height = 5)
 ```
 
 ### Further reading
-* [ggplot2 part 1](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-book-part-1/)
-* [ggplot2 part 2](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-book-part-2/)
-* [ggplot2 part 3](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-book-part-3/)
-* [ggplot2 part 4](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-book-part-4/)
-* [Remove grid and background from plot (ggplot2)](http://felixfan.github.io/rstudy/2013/11/27/ggplot2-remove-grid-background-margin/)
-* [Formatting plots for publications (ggplot2)](http://felixfan.github.io/rstudy/2013/11/27/formatting-plots-for-pubs/)
+* [ggplot2 part 1](http://felixfan.github.io/ggplot2-book-part-1/)
+* [ggplot2 part 2](http://felixfan.github.io/ggplot2-book-part-2/)
+* [ggplot2 part 3](http://felixfan.github.io/ggplot2-book-part-3/)
+* [ggplot2 part 4](http://felixfan.github.io/ggplot2-book-part-4/)
+* [Remove grid and background from plot (ggplot2)](http://felixfan.github.io/ggplot2-remove-grid-background-margin/)
+* [Formatting plots for publications (ggplot2)](http://felixfan.github.io/formatting-plots-for-pubs/)
 * [ggplot2 book code](http://ggplot2.org/book/)
 * [R Cookbook: Graphs](http://www.cookbook-r.com/Graphs/)
