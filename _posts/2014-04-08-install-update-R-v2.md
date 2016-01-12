@@ -13,7 +13,7 @@ R:       3.03
 RStudio: 0.98.501
 ```
 
-updated on Tue Apr 08 14:57:09 2014, it was first post [here](http://felixfan.github.io/rstudy/2013/10/04/install-update-R/)
+updated on Tue Apr 08 14:57:09 2014, it was first post [here](http://felixfan.github.io/install-update-R/)
 
 ### 1. Install R
 
