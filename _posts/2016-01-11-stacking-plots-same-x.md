@@ -1,7 +1,7 @@
 ---
 title: Stacking multiple plots vertically with the same X axis but different Y axes
 layout: post
-categories: [Rstudy]
+categories: [RStudy]
 tags: [R, ggplot2, Plot, reshape2]
 image: /figure2016
 ---

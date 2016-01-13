@@ -1,7 +1,7 @@
 ---
 title: PLINK logistic regression - covariant vs interaction
 layout: post
-categories: [bioinformatics]
+categories: [Bioinformatics]
 tags: [Bioinformatics, Genetics, GWAS,Plink,Logistic regression]
 image: /figure
 ---
