@@ -4,29 +4,32 @@ layout: page
 comments: no
 ---
 
+网站：[{{ site.name }}]({{ site.url }})
+
 {{ site.about }}
 
 ----
 
-###联系方式：
+联系方式：        
 
-{% if site.qq %}
-ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
-{% endif %}
+<p align="top">
+	<a href=http://www.linkedin.com/in/{{ site.linkedin }}>
+		<img align="left" src="/logo/linkedin.jpg" alt="Smiley face" height="50" width="50">
+	</a> 
 
-网站：[{{ site.name }}]({{ site.url }})
+	<a href=http://github.com/{{ site.github }}>
+		<img align="top" src="/logo/GitHub.png" alt="Smiley face" height="50" width="50">
+	</a>
 
-邮箱：[{{ site.email }}](mailto:{{ site.email }})
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+	<a href=https://www.researchgate.net/profile/{{ site.researchgate }}>
+		<img align="left" src="/logo/rg.png" alt="Smiley face" height="50" width="50"/>
+	</a>
 
-{% if site.researchgate %}
-ResearchGate：[https://www.researchgate.net/profile/{{ site.researchgate }}](https://www.researchgate.net/profile/{{ site.researchgate }})
-{% endif %}
-
-{% if site.linkedin %}
-LinkedIn：[http://www.linkedin.com/in/{{ site.linkedin }}](http://www.linkedin.com/in/{{ site.linkedin }})
-{% endif %}
+	<a href= mailto:{{ site.email }}>
+		<img align="top" src="/logo/Gmail.png" alt="Smiley face" height="50" width="50"/>
+	</a>
+</p>
 
 ----
 
