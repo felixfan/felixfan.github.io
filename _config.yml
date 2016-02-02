@@ -15,7 +15,7 @@ duoshuo: felixfan
 researchgate: Yan-Hui_Fan
 linkedin: fanfelix
 googlescholar: 8fX1TSQAAAAJ
-highlighter: pygments
+highlighter: rough
 gems: ["jekyll-paginate"]
 paginate: 20
 paginate_path: "page:num"
