@@ -1,16 +1,15 @@
 ---
-title: 关于
+title: About
 layout: page
 comments: no
 ---
 
-网站：[{{ site.name }}]({{ site.url }})
+website：[{{ site.name }}]({{ site.url }})
 
 {{ site.about }}
 
 ----
-
-联系方式：        
+        
 
 <p align="top">
 	<a href=http://www.linkedin.com/in/{{ site.linkedin }}>
