@@ -1,6 +1,10 @@
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data","superscript","highlight"]
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 permalink: /:title/
 url: http://felixfan.github.io
 name: "Statistics and Programming"

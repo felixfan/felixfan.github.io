@@ -8,32 +8,12 @@ website：[{{ site.name }}]({{ site.url }})
 
 {{ site.about }}
 
-----
-        
+[<img src="/logo/linkedin.jpg" alt="Smiley face" height="50" width="50">](http://www.linkedin.com/in/{{ site.linkedin }})
+[<img src="/logo/GitHub.png" alt="Smiley face" height="50" width="50">](http://github.com/{{ site.github }})
+[<img src="/logo/rg.png" alt="Smiley face" height="50" width="50"/>](https://www.researchgate.net/profile/{{ site.researchgate }})
+[<img src="/logo/google-scholar.jpg" alt="Smiley face" height="50" width="50"/>](https://scholar.google.com/citations?user={{ site.googlescholar }})
+[<img src="/logo/Gmail.png" alt="Smiley face" height="50" width="50"/>](mailto:{{ site.email }})
 
-<p align="top">
-	<a href=http://www.linkedin.com/in/{{ site.linkedin }}>
-		<img align="left" src="/logo/linkedin.jpg" alt="Smiley face" height="50" width="50">
-	</a> 
 
-	<a href=http://github.com/{{ site.github }}>
-		<img align="middle" src="/logo/GitHub.png" alt="Smiley face" height="50" width="50">
-	</a>
 
-	<a href= mailto:{{ site.email }}>
-		<img align="right" src="/logo/Gmail.png" alt="Smiley face" height="50" width="50"/>
-	</a>
-</p>
-
-<p align="top">
-	<a href=https://www.researchgate.net/profile/{{ site.researchgate }}>
-		<img align="left" src="/logo/rg.png" alt="Smiley face" height="50" width="50"/>
-	</a>
-
-	<a href=https://scholar.google.com/citations?user={{ site.googlescholar }}>
-		<img align="middle" src="/logo/google-scholar.jpg" alt="Smiley face" height="50" width="50"/>
-	</a>
-</p>
-
-----
 
