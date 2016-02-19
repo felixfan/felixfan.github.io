@@ -2,7 +2,7 @@
 title: Reorder and relabel boxplot
 layout: post
 categories: [RStudy]
-tags: [R,Plot]
+tags: [R,BoxPlot]
 image: /figure
 ---
 {% include JB/setup %}

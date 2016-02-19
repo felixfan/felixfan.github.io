@@ -2,9 +2,10 @@
 title: Hello MySQL
 layout: post
 categories: [Database]
-tags: [MySQL]
+tags: [database]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 ### Install MySQL on Windows 7

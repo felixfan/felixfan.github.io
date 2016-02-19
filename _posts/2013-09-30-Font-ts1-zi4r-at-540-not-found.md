@@ -2,7 +2,7 @@
 title: Font ts1-zi4r at 540 not found
 layout: post
 categories: [RStudy]
-tags: [R, MiKTeX, LaTeX]
+tags: [LaTeX]
 ---
 {% include JB/setup %}
 

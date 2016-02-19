@@ -5,6 +5,7 @@ categories: [CPlusPlus]
 tags: [C++]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 OS: Windows 7

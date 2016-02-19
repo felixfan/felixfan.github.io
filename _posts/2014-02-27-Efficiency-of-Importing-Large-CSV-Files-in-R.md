@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R, data.table]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 #### {data.table} outperforms other methods

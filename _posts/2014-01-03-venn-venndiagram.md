@@ -2,7 +2,7 @@
 title: Make a Venn Diagram using {VennDiagram}
 layout: post
 categories: [RStudy]
-tags: [R,Plot]
+tags: [R,Venn]
 image: /figure
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 title: Association VS. Causal relationships
 layout: post
 categories: [RStudy]
-tags: [Bioinformatics, Genetics, GWAS]
+tags: [GWAS]
 image: /figure
 ---
 {% include JB/setup %}

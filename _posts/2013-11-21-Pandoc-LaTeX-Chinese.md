@@ -2,7 +2,7 @@
 title: Convert Markdown files into PDF via LaTeX using Pandoc
 layout: post
 categories: [RStudy]
-tags: [R,Pandoc,LaTeX,MiKTeX,RStudio,kintr]
+tags: [LaTeX,kintr]
 image: /figure
 ---
 {% include JB/setup %}

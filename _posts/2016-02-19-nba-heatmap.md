@@ -2,7 +2,7 @@
 title: NBA heatmap plotting by using heatmap, heatmap.2, 3dheatmap and ggplot2
 layout: post
 categories: [RStudy]
-tags: [R, Plot, heatmap, ggplot2]
+tags: [heatmap,ggplot2]
 image: /figure2016
 ---
 {% include JB/setup %}

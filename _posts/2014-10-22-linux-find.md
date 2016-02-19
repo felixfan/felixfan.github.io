@@ -2,7 +2,7 @@
 title: "find: search for files or directories hierarchy"
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics,Linux]
+tags: [Linux]
 image: /figure
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 title: using pip on windows 7
 layout: post
 categories: [Python]
-tags: [Python, pip]
+tags: [Python]
 image: /figure
 ---
 {% include JB/setup %}

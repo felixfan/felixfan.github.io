@@ -5,6 +5,7 @@ categories: [Finance]
 tags: [R, Finance]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 

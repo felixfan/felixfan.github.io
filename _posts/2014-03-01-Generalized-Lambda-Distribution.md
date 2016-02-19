@@ -2,7 +2,7 @@
 title: Generalized Lambda Distribution GLD
 layout: post
 categories: [Finance]
-tags: [R, Finance, Mathematics]
+tags: [Statistics]
 image: /figure
 ---
 {% include JB/setup %}

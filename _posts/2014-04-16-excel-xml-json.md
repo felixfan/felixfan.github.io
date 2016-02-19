@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 what I have learned from coursera course [Getting and Cleaning Data](https://class.coursera.org/getdata-002).

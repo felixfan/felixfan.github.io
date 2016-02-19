@@ -2,7 +2,7 @@
 title: Confounding factor
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics, Genetics]
+tags: [Genetics]
 image: /figure
 ---
 {% include JB/setup %}

@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,aggregate]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 ### Attach data

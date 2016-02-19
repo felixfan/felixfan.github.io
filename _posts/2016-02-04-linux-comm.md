@@ -2,7 +2,7 @@
 title: linux comm command
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics,Linux]
+tags: [Linux]
 image: /figure2016
 ---
 {% include JB/setup %}

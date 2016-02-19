@@ -5,6 +5,7 @@ categories: [Mathematics]
 tags: [Mathematics]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 #### Guess number

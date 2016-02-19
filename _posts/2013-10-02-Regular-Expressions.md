@@ -2,7 +2,7 @@
 title: R Regular Expressions
 layout: post
 categories: [RStudy]
-tags: [R, Regular Expressions,RegEx]
+tags: [R, RegExp]
 image: /figure
 ---
 {% include JB/setup %}

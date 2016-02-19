@@ -2,7 +2,7 @@
 title: Aesthetic mappings and setting of ggplot2
 layout: post
 categories: [RStudy]
-tags: [R, ggplot2, Plot]
+tags: [ggplot2]
 image: /figure2016
 ---
 {% include JB/setup %}

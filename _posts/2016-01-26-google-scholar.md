@@ -2,7 +2,7 @@
 title: google scholar citations
 layout: post
 categories: [RStudy]
-tags: [R, ggplot2, Plot]
+tags: [ggplot2, GoogleScholar]
 image: /figure2016
 ---
 {% include JB/setup %}

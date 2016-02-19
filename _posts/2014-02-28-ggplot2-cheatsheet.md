@@ -2,7 +2,7 @@
 title: ggplot2 Cheatsheet from R for Public Health
 layout: post
 categories: [RStudy]
-tags: [R,Plot,ggplot2]
+tags: [ggplot2]
 image: /figure
 ---
 {% include JB/setup %}

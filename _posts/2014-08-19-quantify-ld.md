@@ -2,7 +2,7 @@
 title: Quantification of Relationship Between Allele Frequencies and r squared
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics, GWAS, Genetics,ggplot2]
+tags: [Genetics]
 image: /figure
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 title: shell script one-liners
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics,Linux]
+tags: [Linux]
 image: /figure
 ---
 {% include JB/setup %}

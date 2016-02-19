@@ -2,7 +2,7 @@
 title: Statistics One study note
 layout: post
 categories: [RStudy]
-tags: [R,Plot]
+tags: [R,Statistics]
 image: /figure
 ---
 {% include JB/setup %}

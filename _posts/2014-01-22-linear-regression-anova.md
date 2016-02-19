@@ -2,7 +2,7 @@
 title: Linear regression and ANOVA are the Same Analysis?!
 layout: post
 categories: [Statistics]
-tags: [R,Statistics]
+tags: [Statistics]
 image: /figure
 ---
 {% include JB/setup %}

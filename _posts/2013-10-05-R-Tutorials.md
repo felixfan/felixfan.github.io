@@ -5,6 +5,7 @@ categories: [RStudy]
 tags: [R,Webpages]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 #### Q & A

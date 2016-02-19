@@ -2,7 +2,7 @@
 title: Trigonometric functions and Differentiation Formulas
 layout: post
 categories: [Mathematics]
-tags: [Mathematics,Finance]
+tags: [Mathematics]
 image: /figure
 ---
 {% include JB/setup %}

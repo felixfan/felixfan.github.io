@@ -2,7 +2,7 @@
 title: Updating kgp IDs to rs IDs for SNPs on Illumina HumanOmni2.5M array
 layout: post
 categories: [Bioinformatics]
-tags: [SNP, kgp, NGS, GWAS, Bioinformatics, Genetics]
+tags: [Bioinformatics]
 image: /figure
 ---
 {% include JB/setup %}

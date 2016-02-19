@@ -2,9 +2,10 @@
 title: Public data
 layout: post
 categories: [Bioinformatics]
-tags: [database, Bioinformatics, Genetics]
+tags: [database]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 * [Tycho](https://www.tycho.pitt.edu/)

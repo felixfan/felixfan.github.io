@@ -2,9 +2,10 @@
 title: Normality test
 layout: post
 categories: [RStudy]
-tags: [R]
+tags: [Statistics]
 image: /figure
 ---
+
 {% include JB/setup %}
 
 ### Data

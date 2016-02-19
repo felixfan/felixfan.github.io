@@ -2,7 +2,7 @@
 title: ggplot2 part 2
 layout: post
 categories: [RStudy]
-tags: [R,Plot,ggplot2]
+tags: [ggplot2]
 image: /figure
 ---
 {% include JB/setup %}

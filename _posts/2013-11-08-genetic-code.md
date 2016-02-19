@@ -2,7 +2,7 @@
 title: Genetic code plot
 layout: post
 categories: [Bioinformatics]
-tags: [Bioinformatics, Genetics]
+tags: [Genetics]
 image: /figure
 ---
 {% include JB/setup %}
