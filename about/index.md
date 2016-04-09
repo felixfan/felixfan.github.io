@@ -14,10 +14,6 @@ I am working in the field of human complex disease research, with specialization
 
 ***
 
-[<img src="/logo/linkedin.jpg" alt="Smiley face" height="50" width="50">](http://www.linkedin.com/in/{{ site.linkedin }})
-[<img src="/logo/GitHub.png" alt="Smiley face" height="50" width="50">](http://github.com/{{ site.github }})
-[<img src="/logo/rg.png" alt="Smiley face" height="50" width="50"/>](https://www.researchgate.net/profile/{{ site.researchgate }})
-[<img src="/logo/google-scholar.jpg" alt="Smiley face" height="50" width="50"/>](https://scholar.google.com/citations?user={{ site.googlescholar }})
-[<img src="/logo/Gmail.png" alt="Smiley face" height="50" width="50"/>](mailto:{{ site.email }})    
+[<img src="/logo/linkedin.jpg" alt="Smiley face" height="50" width="50" align="left" />](http://www.linkedin.com/in/{{ site.linkedin }}) 	 [<img src="/logo/GitHub.png" alt="Smiley face" height="50" width="50" align="left" />](http://github.com/{{ site.github }}) 	 [<img src="/logo/rg.png" alt="Smiley face" height="50" width="50" align="left" />](https://www.researchgate.net/profile/{{ site.researchgate }}) 	 [<img src="/logo/google-scholar.jpg" alt="Smiley face" height="50" width="50" align="left" />](https://scholar.google.com/citations?user={{ site.googlescholar }}) 	[<img src="/logo/Gmail.png" alt="Smiley face" height="50" width="50" align="left" />](mailto:{{ site.email }})
 
 ![](cv.fig.png)
