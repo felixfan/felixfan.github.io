@@ -10,9 +10,9 @@ image: /figure
 The genomic inflation factor \\(\lambda\\) is defined as the ratio of the median of the empirically observed distribution of the test statistic to the expected median, thus quantifying the extent of the bulk inflation and the excess false positive rate.
 
 
-\\[ \lambda = \frac{median(\chi\^{2})}{0.456} \\]
+\\[ \lambda = \frac{median(\chi^{2})}{0.456} \\]
 
-\\[ \chi\^{2}\_{adjusted} = \frac{\chi\^{2}}{\lambda} \\]
+\\[ \chi\^{2}\_{adjusted} = \frac{\chi^{2}}{\lambda} \\]
 
 Genomic inflation factor \\(\lambda\\) and quantile–quantile (Q–Q) plots were used to compare the genome-wide distribution of the test statistic with the expected null distribution. The Q–Q plot is a useful visual tool to mark deviations of the observed distribution from the expected null distribution. Inflated \\(\lambda\\) values or residual deviations in the Q–Q plot may point to undetected sample duplications, unknown familial relationships, a poorly calibrated test statistic, systematic technical bias or gross population stratification.
 
