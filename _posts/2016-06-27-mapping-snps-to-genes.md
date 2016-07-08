@@ -2,7 +2,7 @@
 title: 抓取基因内的所有SNPs
 layout: post
 categories: [Bioinformatics]
-tags: [Linux]
+tags: [Bioinformatics]
 image: /figure2016
 ---
 
